@@ -1,0 +1,18 @@
+\frametitle{定数の宣言}
+    \framesubtitle{みかん}
+    \begin{itemize}
+        \item \texttt{const}を使う
+            \begin{lstlisting}[gobble=16, caption=Syntax]
+                const data_type cariable_name = initial_value;
+            \end{lstlisting}
+        \item マクロを使う
+            \begin{lstlisting}[gobble=16, caption=Syntax]
+                #define name value
+            \end{lstlisting}
+        \item \texttt{enum}を使う
+            %todo
+    \end{itemize}
+    \vfill \hfill
+    \hyperlink{54}{\beamerbutton{←}}
+    \space
+    \hyperlink{56}{\beamerbutton{→}}

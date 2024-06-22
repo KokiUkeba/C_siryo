@@ -1,0 +1,18 @@
+\frametitle{wslのインストール}
+    　ここではwsl(windows\space subsystem\space for\space linux)を用いた,
+    ubuntuのインストールの例を示す.
+    (wslについて知っている人と一緒にやることを推奨する)
+    \begin{enumerate}
+        \item Windows\space PowerShellを起動する.
+        \item 以下を打ち込む.
+        \begin{lstlisting}[gobble=9, caption=Windows\space PowerShell]
+            wsl --update
+            wsl --install
+        \end{lstlisting}
+        \item インストールが終了したら,画面下部のWindowsのタスクバーに"ubuntu"と打ち込み、ubuntuを起動する.
+        \item 初期設定などなど.誰かに聞いたらＯＫ(書きつくすにはスペースが少なすぎた)
+    \end{enumerate}
+    \vfill \hfill
+    \hyperlink{4}{\beamerbutton{←}}
+    \space
+    \hyperlink{6}{\beamerbutton{→}}

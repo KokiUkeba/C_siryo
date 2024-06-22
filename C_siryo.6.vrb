@@ -1,0 +1,20 @@
+\frametitle{C言語の環境構築}
+    ubuntuで以下を打ち込む
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
+            sudo apt update
+            sudo apt install gcc
+        \end{lstlisting}
+    これで完了.下に使い方を示す。
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
+            gcc hoge.c
+            ./a.out
+        \end{lstlisting}
+    　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
+    a.outというファイルが生成される(math.hを使うときは末尾に-lm
+    とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
+    ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
+    強制終了できる.
+    \vfill \hfill
+    \hyperlink{6}{\beamerbutton{←}}
+    \space
+    \hyperlink{8}{\beamerbutton{→}}

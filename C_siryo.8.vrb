@@ -1,0 +1,8 @@
+\frametitle{C言語とは}
+    　1972年にデニス・リッチーによって開発された汎用プログラミング言語.
+    C言語は他の多くのプログラミング言語の基礎となっており,その
+    シンプルさと効率性が特徴である.
+    \vfill \hfill
+    \hyperlink{8}{\beamerbutton{←}}
+    \space
+    \hyperlink{10}{\beamerbutton{→}}

@@ -1,0 +1,24 @@
+\frametitle{switch文}
+    \begin{lstlisting}[gobble=6, caption=Syntax\space of\space switch\space statement, label=switch_howto]
+        switch (expression) {
+        case value1:
+            statement_1;
+            break;
+        case value2:
+            statement_2;
+            break;
+        .
+        .
+        .
+        case value_n:
+            statement_n;
+            break;
+        default:
+            default statement;
+            break;
+        }
+    \end{lstlisting}
+    \vfill \hfill
+    \hyperlink{37}{\beamerbutton{←}}
+    \space
+    \hyperlink{39}{\beamerbutton{→}}

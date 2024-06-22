@@ -1,0 +1,29 @@
+\frametitle{関数の作成}
+    \framesubtitle{プロトタイプ宣言}
+    　自作の関数を作るには,まず関数を宣言する.
+    その後,関数を定義する.
+    \begin{lstlisting}[gobble=8,
+        caption=Syntax\space of\space function\space declaration]
+        return_type name_of_the_function (para_1, para_2, ...);
+    \end{lstlisting}
+    \begin{table}
+    \centering
+        \begin{tabular}{cl}
+            \hline
+            return\_type & 返り値の型を宣言する.\\
+            name\_of\_the\_function & 関数の名前を宣言する.\\
+            para\_n & パラメータの型を宣言する.\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{lstlisting}[gobble=8,
+        caption=Example\space of \space function\space declaration]
+        int sum(int a, int b); //Declaration with parameter names
+        int sum(int, int); //Declaration without parameter names
+    \end{lstlisting}
+    　これらはプロトタイプ宣言と呼ばれ,関数を呼び出す前に
+    記述しなければならない.(main文の上に書く)
+    \vfill \hfill
+    \hyperlink{44}{\beamerbutton{←}}
+    \space
+    \hyperlink{46}{\beamerbutton{→}}

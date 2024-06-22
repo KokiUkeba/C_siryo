@@ -1,0 +1,18 @@
+\frametitle{関数の作成}
+^^I\framesubtitle{関数の定義}
+^^I\begin{lstlisting}[gobble=8, caption=Syntax\space of\space function
+        \space definition]
+        return_type function_name (para1_type para1_name, para2_type para2_name, ...)
+        {
+            //body of the function
+        }
+    \end{lstlisting}
+    　関数の定義は関数の宣言を含むため,関数の呼び出しを行う前
+        (通常main関数の前)に関数の定義をすればプロトタイプ宣言を行わ
+        なくてよい.しかし,main関数の上に関数の定義を置くと、コードの
+        見やすさが損なわれるため,プロトタイプ宣言→main関数→関数の定義
+        の順でコードを書くことをお勧めする.
+    \vfill \hfill
+    \hyperlink{45}{\beamerbutton{←}}
+    \space
+    \hyperlink{47}{\beamerbutton{→}}

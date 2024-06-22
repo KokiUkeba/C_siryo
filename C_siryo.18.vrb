@@ -1,0 +1,17 @@
+\frametitle{論理条件演算子(その1)}
+    \begin{itemize}
+        \item 等値演算子:(左辺)==(右辺)\\
+            \qquad 両辺が等しい場合１,等しくない場合０を返す.
+            \begin{block}{int a = (2==2)}
+                a = 1
+            \end{block}
+        \item 非等値演算子:(左辺)!=(右辺)\\
+            \qquad 両辺が等しい場合０,等しくない場合０を返す.
+            \begin{block}{int a = (2!=2)}
+                a = 0
+            \end{block}
+    \end{itemize}
+    \vfill \hfill
+    \hyperlink{18}{\beamerbutton{←}}
+    \space
+    \hyperlink{20}{\beamerbutton{→}}

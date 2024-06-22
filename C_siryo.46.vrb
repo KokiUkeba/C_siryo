@@ -1,0 +1,43 @@
+\frametitle{関数の定義}
+    \framesubtitle{補足}
+    \vspace{-30pt}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+        \begin{column}{.45\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_1]
+                #include<stdio.h>
+
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
+
+                int main(void)
+                {
+                    //body of the main funcion
+                }
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{.51\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_2]
+                #include<stdio.h>
+
+                void hoge(int *);
+
+                int main(void)
+                {
+                    //body of the main function
+                }
+
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
+            \end{lstlisting}
+        \end{column}
+    \end{columns}
+    　右の書き方であれば,自作関数をいくつ定義してもmain関数が
+    必ず一番初めに定義されるので,見やすくなる.
+    \vfill \hfill
+    \hyperlink{46}{\beamerbutton{←}}
+    \space
+    \hyperlink{48}{\beamerbutton{→}}

@@ -1,0 +1,29 @@
+\frametitle{while文(条件付き反復)}
+    繰り返しの条件が決まっている反復処理に使われる.
+    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space while\space loop , label=while_howto]
+    initialization
+
+    while (condition) {
+        //body of the while loop
+    }
+    \end{lstlisting}
+    \begin{tabular}{cl}
+        \hline
+        condition & \begin{tabular}{l}
+            式の値が評価され,真の場合while文内の処理を実行する.\\
+            偽の場合while文内の処理を実行せずwhile文を抜け出す.
+            \end{tabular}\\
+        \hline
+    \end{tabular}
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+        \item 繰り返しの処理内で,inisializetionに該当する変数の値が
+            変わらないときfor文を使い,変わるときwhile文を使うとよい.
+        \item conditionを常に真としたい時,conditionを1とすればよい.
+        \item 繰り返しが無限に続かないように注意する.
+        \end{itemize}
+    \end{itembox}
+    \vfill \hfill
+    \hyperlink{28}{\beamerbutton{←}}
+    \space
+    \hyperlink{30}{\beamerbutton{→}}

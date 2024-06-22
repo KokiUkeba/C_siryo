@@ -1,0 +1,22 @@
+\frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=8, firstnumber=18, caption=pra\_func.c]
+        double Norm(int data,...) //function definition
+        {
+            va_list list; //va_list type declaration
+            double value, norm_squared = 0;
+            int i;
+
+            //printf("demension=%d\n", data);
+
+            if (data < 1) {
+                perror("data error");
+                return 1;
+            }
+
+            va_start(list, data); //initialize list
+
+    \end{lstlisting}
+    \vfill \hfill
+    \hyperlink{48}{\beamerbutton{←}}
+    \space
+    \hyperlink{50}{\beamerbutton{→}}

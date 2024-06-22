@@ -1,0 +1,27 @@
+\frametitle{解説}
+    \begin{block}{出力}
+    10\\
+    3.14\\
+    2.71828\\
+    A
+    \end{block}
+    変数を使うには,変数の型を宣言する必要がある.\\
+    printf関数を用いて変数の値を表示する時は,フォーマット指定子を用いる.
+    \begin{table}[h]
+        \caption{フォーマット指定子の例}
+        \label{format}
+        \centering
+        \begin{tabular}{cl}
+            \hline
+            \%d & 整数を10進数で出力\\
+            \%f & 実数を出力\\
+            \%e & 実数を指数表記で出力\\
+            \%c & １文字を出力\\
+            \%s & 文字列を出力\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \vfill \hfill
+    \hyperlink{13}{\beamerbutton{←}}
+    \space
+    \hyperlink{15}{\beamerbutton{→}}

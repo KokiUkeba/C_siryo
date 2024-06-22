@@ -1,0 +1,22 @@
+\frametitle{論理条件演算子(その2)}
+    \begin{itemize}
+        \item \begin{verbatim}and演算子:(左辺)&&(右辺)\end{verbatim}
+            \qquad 両辺が真の場合1,それ以外の場合0を返す.
+            \begin{block}{int a $= ((2==2)\&\& (3==3))$}
+                a = 1
+            \end{block}
+        \item \begin{verbatim}or演算子:(左辺)||(右辺)\end{verbatim}
+            \qquad 両辺が偽の場合０,それ以外の場合1を返す.
+            \begin{block}{int a $= ((2==2) \lvert\rvert  (3==3))$}
+                a = 1
+            \end{block}
+        \item 否定演算子:!(条件式)\\
+            \qquad 条件式の真偽を反転させる.
+            \begin{block}{int a = !(2==2)}
+                    a = 0
+            \end{block}
+    \end{itemize}
+    \vfill \hfill
+    \hyperlink{19}{\beamerbutton{←}}
+    \space
+    \hyperlink{21}{\beamerbutton{→}}

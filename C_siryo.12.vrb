@@ -1,0 +1,23 @@
+\frametitle{変数とデータ型}
+    \begin{lstlisting}[gobble=8, caption=variable.c, label=variable]
+        #include<stdio.h>
+
+        int main(void)
+        {
+            int a = 10;         //integer
+            float b = 3.14;     //floating point
+            double c = 2.71828; //double precision floating point
+            char d = 'A';       //character
+
+            printf("a = %d\n", a);
+            printf("b = %f\n", b);
+            printf("c = %lf\n", c);
+            printf("d = %c\n", d);
+
+            return 0;
+        }
+    \end{lstlisting}
+    \vfill \hfill
+    \hyperlink{12}{\beamerbutton{←}}
+    \space
+    \hyperlink{14}{\beamerbutton{→}}

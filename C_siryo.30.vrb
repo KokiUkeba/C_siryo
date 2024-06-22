@@ -1,0 +1,15 @@
+\frametitle{do\space while文}
+    始めに文内の処理を行い,その後while文と同じ挙動をする.\\
+    必ず一回は文内の処理を行いたいときに使う.
+    \begin{lstlisting}[gobble=6, caption=Syntax\space of\space do\space while\space loop, label=dowhile_howto]
+        do {
+            // body of do-while loop
+        } while (condition);
+    \end{lstlisting}
+    「while文ではループに入る条件を決め,do\space while文ではループから出る
+    条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
+    変わらないときが多く,そのようなときはwhile文を使うのがよい.
+    \vfill \hfill
+    \hyperlink{30}{\beamerbutton{←}}
+    \space
+    \hyperlink{32}{\beamerbutton{→}}

@@ -1,0 +1,22 @@
+\frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=8, firstnumber=32, caption=pra\_func.c]
+            for (i = 0; i < data; i++) {
+                value = va_arg(list, double);
+                //printf("data%d=%f\n", i, value);
+                norm_squared += pow(value, 2);
+            }
+
+            va_end(list); //release list
+            return sqrt(norm_squared);
+        }
+    \end{lstlisting}
+    \begin{block}{出力}
+        norm1=5.385165e+00\\
+        norm2=7.071068e+00
+    \end{block}
+    　このような処理には配列を使うのが一般的である.例ということで
+    許してほしい.
+    \vfill \hfill
+    \hyperlink{49}{\beamerbutton{←}}
+    \space
+    \hyperlink{51}{\beamerbutton{→}}

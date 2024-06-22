@@ -1,0 +1,29 @@
+\frametitle{コマンドなどなど}
+    　ubuntuは(Linuxディストリビューションの一つで,)
+    OS(Operating System)なので,
+    c言語を動かすためだけに用いるにはあまりにも十分すぎる環境である.
+    関係のない機能が多すぎて逆に使いにくいと感じるかもしれない.
+    しかし,今後PythonやGIT、ROSを扱う際にも使えるので、今のうちに
+    慣れておくとよいだろう.閉じたいときは右上×ボタンから閉じられる。
+    \begin{table}[h]
+        \caption{基本的なコマンド}
+        \label{commands}
+        \centering
+        \begin{tabular}{cl}
+            \hline
+            コマンド & 説明\\
+            \hline \hline
+            ls & ディレクトリ及びファイルの表示\\
+            cd [DirectoryName] & ディレクトリの移動\\
+            mkdir [DirectoryName] & ディレクトリの作成\\
+            rmdir [DirectoryName] & ディレクトリの削除\\
+            touch [FileName] & ファイルの作成\\
+            rm [FileName] & ファイルの削除\\
+            exploler.exe . & エクスプローラーで開く\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \vfill \hfill
+    \hyperlink{5}{\beamerbutton{←}}
+    \space
+    \hyperlink{7}{\beamerbutton{→}}

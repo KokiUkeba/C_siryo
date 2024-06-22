@@ -1,0 +1,18 @@
+\frametitle{サンプルコード}
+    \begin{lstlisting}[firstnumber=16, gobble=8, caption=pra\_switch.c, label=pra-switch2]
+                case 2:
+                    count_2++;
+                    break;
+                }
+            }
+
+            printf("remainder=0\t%d\n", count_0);
+            printf("remainder=1\t%d\n", count_1);
+            printf("remainder=2\t%d\n", count_2);
+            return 0;
+        }
+    \end{lstlisting}
+    \vfill \hfill
+    \hyperlink{39}{\beamerbutton{←}}
+    \space
+    \hyperlink{41}{\beamerbutton{→}}

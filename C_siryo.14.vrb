@@ -1,0 +1,22 @@
+\frametitle{演算(その1)}
+    加算は+,減算は-、乗算は*、除算は/である.int型同士の商は
+    少数切り捨ての整数となる.また,剰余は\%で求める。
+    \begin{block}{9 + 2}
+        11
+    \end{block}
+    \begin{block}{9 - 2}
+        7
+    \end{block}
+    \begin{block}{9 * 2}
+        18
+    \end{block}
+    \begin{block}{9 / 2}
+        4
+    \end{block}
+    \begin{block}{9 \% 2}
+        1
+    \end{block}
+    \vfill \hfill
+    \hyperlink{14}{\beamerbutton{←}}
+    \space
+    \hyperlink{16}{\beamerbutton{→}}

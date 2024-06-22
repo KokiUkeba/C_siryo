@@ -1,0 +1,47 @@
+\frametitle{関数の基本}
+    　すでに出てきた関数として,main関数やprintf関数などがある.\\
+    関数を使うとき,その返り値や引数を知る必要がある.
+    \begin{table}
+    \caption{関数を呼び出すときの構造}
+    \centering
+        \vspace{-15pt}
+        \begin{tabular}{cl}
+            \hline
+            \multicolumn{2}{c}{\texttt{VariableNumber =
+            FunctionName\space
+            (Parameter\_1, Parameter\_2, ...);}}\\
+            \hline \hline
+            \begin{tabular}{c}
+                引数\\
+                \texttt{Parameter}
+            \end{tabular} &
+                \begin{tabular}{l}
+                    関数を呼び出す時,その関数に渡す値.\\
+                    main関数のように引数を持たない関数もある.\\
+                    例:\space \texttt{double a = sin(x);
+                        //\space 引数はx}
+                \end{tabular}\\
+            \hline
+            \begin{tabular}{c}
+                返り値\\
+                \texttt{returning value}
+            \end{tabular} &
+                \begin{tabular}{l}
+                    関数が返す値.返り値がない関数もある.\\
+                    例:\space \texttt{double a = sin(x);} \\
+                    \qquad //\space 返り値はaに代入される
+                \end{tabular}\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item printf関数は出力した文字数を返り値としている.
+            \item main関数の返り値は,
+                ubuntuの場合\texttt{echo\space \$?}で確認できる.
+        \end{itemize}
+    \end{itembox}
+    \vfill \hfill
+    \hyperlink{43}{\beamerbutton{←}}
+    \space
+    \hyperlink{45}{\beamerbutton{→}}
