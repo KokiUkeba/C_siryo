@@ -1,0 +1,6 @@
+\frametitle{}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{00}{\beamerbutton{＜}}
+        \space
+        \hyperlink{00}{\beamerbutton{＞}}
+    \end{textblock*}

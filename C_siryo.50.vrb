@@ -16,7 +16,8 @@
     \end{block}
     　このような処理には配列を使うのが一般的である.例ということで
     許してほしい.
-    \vfill \hfill
-    \hyperlink{49}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{49}{\beamerbutton{＜}}
     \space
-    \hyperlink{51}{\beamerbutton{→}}
+    \hyperlink{51}{\beamerbutton{＞}}
+    \end{textblock*}

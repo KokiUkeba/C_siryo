@@ -1,15 +1,25 @@
-\frametitle{do\space while文}
-    始めに文内の処理を行い,その後while文と同じ挙動をする.\\
-    必ず一回は文内の処理を行いたいときに使う.
-    \begin{lstlisting}[gobble=6, caption=Syntax\space of\space do\space while\space loop, label=dowhile_howto]
-        do {
-            // body of do-while loop
-        } while (condition);
+\frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=4, caption=pra\_while.c, label=pra-while]
+    #include<stdio.h>
+
+    int main(void)
+    {
+        double x = 199;
+
+        while (x > 1) {
+            x /= 9;
+        }
+
+        printf("%f", x);
+
+        return 0;
+    }
     \end{lstlisting}
-    「while文ではループに入る条件を決め,do\space while文ではループから出る
-    条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
-    変わらないときが多く,そのようなときはwhile文を使うのがよい.
-    \vfill \hfill
-    \hyperlink{30}{\beamerbutton{←}}
+    \begin{block}{出力}
+    0.272977
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{29}{\beamerbutton{＜}}
     \space
-    \hyperlink{32}{\beamerbutton{→}}
+    \hyperlink{31}{\beamerbutton{＞}}
+    \end{textblock*}

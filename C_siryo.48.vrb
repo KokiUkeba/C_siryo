@@ -1,22 +1,27 @@
 \frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, firstnumber=18, caption=pra\_func.c]
-        double Norm(int data,...) //function definition
+    \framesubtitle{ベクトルのノルムを計算する関数を作成する.}
+    \vspace{-10pt}
+    \begin{lstlisting}[gobble=8, caption=pra\_func.c]
+        #include<stdio.h>
+        #include<stdarg.h>
+        #include<math.h>
+
+        double Norm(int,...); //function declaration
+
+        int main(void)
         {
-            va_list list; //va_list type declaration
-            double value, norm_squared = 0;
-            int i;
+            double norm1, norm2 = 0;
 
-            //printf("demension=%d\n", data);
+            norm1 = Norm(3, 2., 3., 4.); //call function
+            norm2 = Norm(3, 3., 4., 5.);
 
-            if (data < 1) {
-                perror("data error");
-                return 1;
-            }
-
-            va_start(list, data); //initialize list
-
+            printf("norm1=%e\n", norm1);
+            printf("norm2=%e\n", norm2);
+            return 0;
+        }
     \end{lstlisting}
-    \vfill \hfill
-    \hyperlink{48}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{47}{\beamerbutton{＜}}
     \space
-    \hyperlink{50}{\beamerbutton{→}}
+    \hyperlink{49}{\beamerbutton{＞}}
+    \end{textblock*}

@@ -1,24 +1,30 @@
-\frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=4, caption=pra\_while.c, label=pra-while]
-    #include<stdio.h>
+\frametitle{while文(条件付き反復)}
+    繰り返しの条件が決まっている反復処理に使われる.
+    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space while\space loop , label=while_howto]
+    initialization
 
-    int main(void)
-    {
-        double x = 199;
-
-        while (x > 1) {
-            x /= 9;
-        }
-
-        printf("%f", x);
-
-        return 0;
+    while (condition) {
+        //body of the while loop
     }
     \end{lstlisting}
-    \begin{block}{出力}
-    0.272977
-    \end{block}
-    \vfill \hfill
-    \hyperlink{29}{\beamerbutton{←}}
+    \begin{tabular}{cl}
+        \hline
+        condition & \begin{tabular}{l}
+            式の値が評価され,真の場合while文内の処理を実行する.\\
+            偽の場合while文内の処理を実行せずwhile文を抜け出す.
+            \end{tabular}\\
+        \hline
+    \end{tabular}
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+        \item 繰り返しの処理内で,inisializetionに該当する変数の値が
+            変わらないときfor文を使い,変わるときwhile文を使うとよい.
+        \item conditionを常に真としたい時,conditionを1とすればよい.
+        \item 繰り返しが無限に続かないように注意する.
+        \end{itemize}
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{28}{\beamerbutton{＜}}
     \space
-    \hyperlink{31}{\beamerbutton{→}}
+    \hyperlink{30}{\beamerbutton{＞}}
+    \end{textblock*}

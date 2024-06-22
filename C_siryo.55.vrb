@@ -12,7 +12,8 @@
         \item \texttt{enum}を使う
             %todo
     \end{itemize}
-    \vfill \hfill
-    \hyperlink{54}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{54}{\beamerbutton{＜}}
     \space
-    \hyperlink{56}{\beamerbutton{→}}
+    \hyperlink{56}{\beamerbutton{＞}}
+    \end{textblock*}

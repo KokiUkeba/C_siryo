@@ -1,32 +1,21 @@
-\frametitle{テキストエディタの使い方}
-    ubuntuにデフォルトでインストールされているvimを紹介する.
-    \begin{table}[h]
-        \caption{vimの使い方}
-        \label{vim_howto}
-        \centering
-        \begin{tabular}{cl}
-            \hline
-            \multicolumn{2}{c}{\textbf{ubuntu}}\\
-            \hline \hline
-            vi [FileName] & ファイルを作成し開く\\
-            \hline
-            \multicolumn{2}{c}{\textbf{Normal mode}}\\
-            \hline \hline
-            i & Insert modeへ(文字を入力できる)\\
-            : & Command-line modeへ\\
-            \hline
-            \multicolumn{2}{c}{\textbf{Command-line mode}}\\
-            \hline \hline
-            w & 変更の保存\\
-            q & vimの終了\\
-            wq & 上書き保存して終了する\\
-            q! & 変更を破棄し終了する\\
-            \hline
-        \end{tabular}
-    \end{table}
-    他にもいろいろあるので,興味があれば調べるのが良い.
-        (\texttt{vimtutor}など)
-    \vfill \hfill
-    \hyperlink{7}{\beamerbutton{←}}
+\frametitle{C言語の環境構築}
+    ubuntuで以下を打ち込む
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
+            sudo apt update
+            sudo apt install gcc
+        \end{lstlisting}
+    これで完了.下に使い方を示す。
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
+            gcc hoge.c // g++ hoge.cpp
+            ./a.out
+        \end{lstlisting}
+    　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
+    a.outというファイルが生成される(math.hを使うときは末尾に-lm
+    とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
+    ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
+    強制終了できる.
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{6}{\beamerbutton{＜}}
     \space
-    \hyperlink{9}{\beamerbutton{→}}
+    \hyperlink{8}{\beamerbutton{＞}}
+    \end{textblock*}

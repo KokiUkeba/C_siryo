@@ -1,6 +1,6 @@
 \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{31}{\beamerbutton{＜}}
+    \hyperlink{23}{\beamerbutton{＜}}
     \space
-    \hyperlink{33}{\beamerbutton{＞}}
+    \hyperlink{25}{\beamerbutton{＞}}
     \end{textblock*}

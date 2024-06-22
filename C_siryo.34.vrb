@@ -18,7 +18,8 @@
             return 0;
         }
     \end{lstlisting}
-    \vfill \hfill
-    \hyperlink{33}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{33}{\beamerbutton{＜}}
     \space
-    \hyperlink{35}{\beamerbutton{→}}
+    \hyperlink{35}{\beamerbutton{＞}}
+    \end{textblock*}

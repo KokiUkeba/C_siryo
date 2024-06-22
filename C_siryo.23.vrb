@@ -1,5 +1,24 @@
-\frametitle{演習問題}
-    \vfill \hfill
-    \hyperlink{23}{\beamerbutton{←}}
+\frametitle{ビット演算子(その2)}
+    \begin{itemize}
+        \item ビット反転演算子:\~\space (式)\\
+            \qquad (式)の全ビットを反転させる.
+            \begin{block}{a = \~\space 29}
+                -30 \qquad //8bit分計算されている
+            \end{block}
+        \item シフト演算子:(式1)$<<$(式2)\\
+            \qquad (式1)の値を(式2)のビット数だけシフトさせる.
+            \begin{block}{a = 29$<<$2}
+                a = 116 \qquad //左シフトは(式1)を$2^{\textrm{n}}$倍した
+                値となる
+            \end{block}
+            \qquad 同様にして右シフトもできる.
+            \begin{block}{a = 29$>>$2}
+                a = 7 \qquad //右シフトは(式1)を$2^{\textrm{-n}}$倍した
+                整数値となる
+            \end{block}
+    \end{itemize}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{22}{\beamerbutton{＜}}
     \space
-    \hyperlink{25}{\beamerbutton{→}}
+    \hyperlink{24}{\beamerbutton{＞}}
+    \end{textblock*}

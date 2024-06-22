@@ -1,0 +1,20 @@
+\frametitle{ローカル変数とグローバル変数}
+    変数は下のように大きく二つに大別できる.
+    \begin{itemize}
+        \item ローカル変数\qquad 関数内で宣言された変数
+        \item グローバル変数\qquad 関数外で宣言された変数
+    \end{itemize}
+    　これらはにはさらに静的変数かそうでないかという違いがある.\\
+    (変数宣言時に\texttt{static}をつけると静的変数となる.\\
+    \qquad 例:\space \texttt{static int a = 3;})
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item 寿命:変数の存続時間
+            \item スコープ:変数の有効範囲
+        \end{itemize}
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{51}{\beamerbutton{＜}}
+    \space
+    \hyperlink{53}{\beamerbutton{＞}}
+    \end{textblock*}

@@ -1,5 +1,25 @@
-\frametitle{演習問題}
-    \vfill \hfill
-    \hyperlink{27}{\beamerbutton{←}}
+\frametitle{サンプルコード}
+    \vspace{-20pt}
+    \begin{lstlisting}[gobble=4, caption=pra\_ for.c, label=pra-for]
+    #include<stdio.h>
+
+    int main(void)
+    {
+
+        for (int i = 0; i < 10; i++) {
+            printf("Hello World\n");
+        }
+
+        return 0;
+    }
+    \end{lstlisting}
+    \begin{block}{出力}
+    Hello\space World\\
+    \dots\\
+    Hello\space World //10個表示されている
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{26}{\beamerbutton{＜}}
     \space
-    \hyperlink{29}{\beamerbutton{→}}
+    \hyperlink{28}{\beamerbutton{＞}}
+    \end{textblock*}

@@ -1,0 +1,35 @@
+\frametitle{配列の宣言}
+    　C言語の配列とは同じ型の、複数の値を一つの名前で扱う
+    ことができるデータ構造の一つである。より踏み込んだ説明を
+    するならば、メモリ上に同じ型の配列要素が連続して並んだ
+    領域のことである。
+    \vspace{-5pt}
+    \begin{lstlisting}[gobble=8, caption=Syntax of array declaration]
+        data_type array_name[size];
+
+        // N-dimensional array
+        data_type array_name[size1] [size2] ... [sizeN];
+    \end{lstlisting}
+    \vspace{-8pt}
+    \begin{table}
+    \centering
+        \begin{tabular}{cl}
+            \hline \vspace{-10pt}\\
+            data\_type & 配列の要素の型を宣言する.\\
+            array\_name & 配列には任意の名前を付けられる。\\
+            size & 配列の要素数。定数で指定する。\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \vspace{-3pt}
+    \begin{itembox}[l]{tips\space～ポインタへ向けての準備1～}
+        \vspace{-5pt}
+            　メモリとはデータを記憶するパーツのことで、読み書きの
+            できるRAM(Random Access Memory)と読み取り専用のROM
+            (Read OnlyMemory)の2種類がある。
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{56}{\beamerbutton{＜}}
+        \space
+        \hyperlink{58}{\beamerbutton{＞}}
+    \end{textblock*}

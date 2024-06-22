@@ -2,6 +2,7 @@
 
 \usetheme{Boadilla}
 \setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}[frame number]
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -14,6 +15,9 @@
 \usepackage{hyperref}
 \usepackage{listings, jvlisting}
 \usepackage{caption, float}
+\usepackage[absolute, overlay]{textpos}
+\usepackage{layout}
+%\usepackage[colorgrid, gridunit=pt, texcoord]{eso-pic}
 \hypersetup{%
  setpagesize=false,%
  bookmarks=true,%
@@ -56,25 +60,36 @@
 \date{\today}
 
 \begin{document}
-\maketitle
+\begin{frame}[plain, label=1]
+    \frametitle{}
+    \titlepage
+\end{frame}
 
 \section{はじめに}
 \begin{frame}[c, label=2]
     \frametitle{はじめに}
-    　これからc言語を学ぶ皆さんの健闘をを祈る。
+    　これからc言語を学ぶ皆さんの健闘を祈る。
     誤字脱字などがあれば知らせてくれると助かります。
 \end{frame}
 
 \section{目次}
-\tableofcontents
+\begin{frame}[allowframebreaks, label=3]
+    \frametitle{目次}
+    \tableofcontents
+\end{frame}
 
 \section{環境構築}
 \begin{frame}[label=4]
-        \frametitle{環境構築}
-        \tableofcontents[sections={2,3}]
+    \frametitle{環境構築}
+    \framesubtitle{wslを用いた環境作りを行う}
+    \tableofcontents[sections={2,3}]
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{3}{\beamerbutton{＜}}
+        \space
+        \hyperlink{5}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
-\subsection{wslのインストール}
 \begin{frame}[t, fragile, label=5]
     \frametitle{wslのインストール}
     　ここではwsl(windows\space subsystem\space for\space linux)を用いた,
@@ -90,10 +105,11 @@
         \item インストールが終了したら,画面下部のWindowsのタスクバーに"ubuntu"と打ち込み、ubuntuを起動する.
         \item 初期設定などなど.誰かに聞いたらＯＫ(書きつくすにはスペースが少なすぎた)
     \end{enumerate}
-    \vfill \hfill 
-    \hyperlink{4}{\beamerbutton{←}}
-    \space
-    \hyperlink{6}{\beamerbutton{→}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{4}{\beamerbutton{＜}}
+        \space
+        \hyperlink{6}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{ubuntuコマンド}
@@ -109,6 +125,7 @@
         \caption{基本的なコマンド}
         \label{commands}
         \centering
+        \vspace{-5pt}
         \begin{tabular}{cl}
             \hline
             コマンド & 説明\\               
@@ -119,14 +136,15 @@
             rmdir [DirectoryName] & ディレクトリの削除\\
             touch [FileName] & ファイルの作成\\
             rm [FileName] & ファイルの削除\\
-            exploler.exe . & エクスプローラーで開く\\
+            explorer.exe . & エクスプローラーで開く\\
             \hline
         \end{tabular}
     \end{table}
-    \vfill \hfill 
-    \hyperlink{5}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{5}{\beamerbutton{＜}}
     \space
-    \hyperlink{7}{\beamerbutton{→}}
+    \hyperlink{7}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=7]
@@ -138,7 +156,7 @@
         \end{lstlisting}
     これで完了.下に使い方を示す。
         \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
-            gcc hoge.c
+            gcc hoge.c // g++ hoge.cpp
             ./a.out
         \end{lstlisting}
     　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
@@ -146,10 +164,11 @@
     とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
     ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
     強制終了できる.
-    \vfill \hfill 
-    \hyperlink{6}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{6}{\beamerbutton{＜}}
     \space
-    \hyperlink{8}{\beamerbutton{→}}
+    \hyperlink{8}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{vimの使い方}
@@ -182,10 +201,11 @@
     \end{table}
     他にもいろいろあるので,興味があれば調べるのが良い.
         (\texttt{vimtutor}など)
-    \vfill \hfill 
-    \hyperlink{7}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{7}{\beamerbutton{＜}}
     \space
-    \hyperlink{9}{\beamerbutton{→}}
+    \hyperlink{9}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{C言語とは}
@@ -194,10 +214,11 @@
     　1972年にデニス・リッチーによって開発された汎用プログラミング言語.
     C言語は他の多くのプログラミング言語の基礎となっており,その
     シンプルさと効率性が特徴である.
-    \vfill \hfill 
-    \hyperlink{8}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{8}{\beamerbutton{＜}}
     \space
-    \hyperlink{10}{\beamerbutton{→}}
+    \hyperlink{10}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{基本構文}
@@ -216,10 +237,11 @@
     \begin{block}{出力}
         Hello world
     \end{block}
-    \vfill \hfill 
-    \hyperlink{9}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{9}{\beamerbutton{＜}}
     \space
-    \hyperlink{11}{\beamerbutton{→}}
+    \hyperlink{11}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=11]
@@ -243,20 +265,22 @@
                     複数行にまたげる.
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{10}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{10}{\beamerbutton{＜}}
     \space
-    \hyperlink{12}{\beamerbutton{→}}
+    \hyperlink{12}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{変数と演算}
 \begin{frame}[label=12]
     \frametitle{変数と演算}
     \tableofcontents[sections={2,6}]
-    \vfill \hfill 
-    \hyperlink{11}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{11}{\beamerbutton{＜}}
     \space
-    \hyperlink{13}{\beamerbutton{→}}
+    \hyperlink{13}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{変数}
@@ -274,16 +298,17 @@
 
             printf("a = %d\n", a);
             printf("b = %f\n", b);
-            printf("c = %lf\n", c);
+            printf("c = %e\n", c);
             printf("d = %c\n", d);
 
             return 0;
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{12}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{12}{\beamerbutton{＜}}
     \space
-    \hyperlink{14}{\beamerbutton{→}}
+    \hyperlink{14}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=14]
@@ -300,6 +325,7 @@
         \caption{フォーマット指定子の例}
         \label{format}
         \centering
+        \vspace{-5pt}
         \begin{tabular}{cl}
             \hline
             \%d & 整数を10進数で出力\\
@@ -310,10 +336,11 @@
             \hline
         \end{tabular}
     \end{table}
-    \vfill \hfill 
-    \hyperlink{13}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{13}{\beamerbutton{＜}}
     \space
-    \hyperlink{15}{\beamerbutton{→}}
+    \hyperlink{15}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{演算}
@@ -336,10 +363,11 @@
     \begin{block}{9 \% 2}
         1   
     \end{block}
-    \vfill \hfill 
-    \hyperlink{14}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{14}{\beamerbutton{＜}}
     \space
-    \hyperlink{16}{\beamerbutton{→}}
+    \hyperlink{16}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, label=16]
@@ -360,10 +388,11 @@
     \begin{block}{(double)a / b //a,bはint型で宣言してある}
         double型の計算結果を得る
     \end{block}
-    \vfill \hfill 
-    \hyperlink{15}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{15}{\beamerbutton{＜}}
     \space
-    \hyperlink{17}{\beamerbutton{→}}
+    \hyperlink{17}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{代入演算}
@@ -385,10 +414,11 @@
     \begin{block}{$x--$}
         4\qquad //デクリメントと言う
     \end{block}
-    \vfill \hfill 
-    \hyperlink{16}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{16}{\beamerbutton{＜}}
     \space
-    \hyperlink{18}{\beamerbutton{→}}
+    \hyperlink{18}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{更新処理}
@@ -408,10 +438,11 @@
     \begin{exampleblock}{x = x / i}
         x /= i
     \end{exampleblock}
-    \vfill \hfill 
-    \hyperlink{17}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{17}{\beamerbutton{＜}}
     \space
-    \hyperlink{19}{\beamerbutton{→}}
+    \hyperlink{19}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{論理条件演算子}
@@ -429,10 +460,11 @@
                 a = 0
             \end{block}
     \end{itemize}
-    \vfill \hfill 
-    \hyperlink{18}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{18}{\beamerbutton{＜}}
     \space
-    \hyperlink{20}{\beamerbutton{→}}
+    \hyperlink{20}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[c, fragile, label=20]
@@ -454,10 +486,11 @@
                     a = 0
             \end{block}
     \end{itemize}
-    \vfill \hfill 
-    \hyperlink{19}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{19}{\beamerbutton{＜}}
     \space
-    \hyperlink{21}{\beamerbutton{→}}
+    \hyperlink{21}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 \subsection{関係演算子}
 \begin{frame}[t, fragile, label=21]
@@ -480,10 +513,11 @@
                 \end{block}
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{20}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{20}{\beamerbutton{＜}}
     \space
-    \hyperlink{22}{\beamerbutton{→}}
+    \hyperlink{22}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{ビット演算子}
@@ -506,10 +540,11 @@
                 a = 29\qquad $//29=11101_{(2)},17=10001_{(2)}$
             \end{block}
     \end{itemize}
-    \vfill \hfill 
-    \hyperlink{21}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{21}{\beamerbutton{＜}}
     \space
-    \hyperlink{23}{\beamerbutton{→}}
+    \hyperlink{23}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=23]
@@ -532,28 +567,31 @@
                 整数値となる
             \end{block}
     \end{itemize}
-    \vfill \hfill 
-    \hyperlink{22}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{22}{\beamerbutton{＜}}
     \space
-    \hyperlink{24}{\beamerbutton{→}}
+    \hyperlink{24}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t,fragile, label=24]
     \frametitle{演習問題}
-    \vfill \hfill 
-    \hyperlink{23}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{23}{\beamerbutton{＜}}
     \space
-    \hyperlink{25}{\beamerbutton{→}}
+    \hyperlink{25}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{実行制御}
 \begin{frame}[label=25]
     \frametitle{実行制御}
     \tableofcontents[sections={2,7}]
-    \vfill \hfill 
-    \hyperlink{24}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{24}{\beamerbutton{＜}}
     \space
-    \hyperlink{26}{\beamerbutton{→}}
+    \hyperlink{26}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{for文}
@@ -587,10 +625,11 @@
             \end{tabular}\\
         \hline
     \end{tabular}
-    \vfill \hfill 
-    \hyperlink{25}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{25}{\beamerbutton{＜}}
     \space
-    \hyperlink{27}{\beamerbutton{→}}
+    \hyperlink{27}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=27]
@@ -601,7 +640,6 @@
 
     int main(void)
     {
-        int i = 0;
 
         for (int i = 0; i < 10; i++) {
             printf("Hello World\n"); 
@@ -615,18 +653,20 @@
     \dots\\
     Hello\space World //10個表示されている
     \end{block}
-    \vfill \hfill 
-    \hyperlink{26}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{26}{\beamerbutton{＜}}
     \space
-    \hyperlink{28}{\beamerbutton{→}}
+    \hyperlink{28}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=28]
     \frametitle{演習問題}
-    \vfill \hfill 
-    \hyperlink{27}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{27}{\beamerbutton{＜}}
     \space
-    \hyperlink{29}{\beamerbutton{→}}
+    \hyperlink{29}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{while文}
@@ -656,10 +696,11 @@
         \item 繰り返しが無限に続かないように注意する.
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{28}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{28}{\beamerbutton{＜}}
     \space
-    \hyperlink{30}{\beamerbutton{→}}
+    \hyperlink{30}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=30]
@@ -683,10 +724,11 @@
     \begin{block}{出力}
     0.272977
     \end{block}
-    \vfill \hfill 
-    \hyperlink{29}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{29}{\beamerbutton{＜}}
     \space
-    \hyperlink{31}{\beamerbutton{→}}
+    \hyperlink{31}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subtitle{do while文}
@@ -702,18 +744,20 @@
     「while文ではループに入る条件を決め,do\space while文ではループから出る
     条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
     変わらないときが多く,そのようなときはwhile文を使うのがよい.
-    \vfill \hfill 
-    \hyperlink{30}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{30}{\beamerbutton{＜}}
     \space
-    \hyperlink{32}{\beamerbutton{→}}
+    \hyperlink{32}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=32]
     \frametitle{演習問題}
-    \vfill \hfill 
-    \hyperlink{31}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{31}{\beamerbutton{＜}}
     \space
-    \hyperlink{33}{\beamerbutton{→}}
+    \hyperlink{33}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{if文}
@@ -745,10 +789,11 @@
             //code executed when the condition is false
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{32}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{32}{\beamerbutton{＜}}
     \space
-    \hyperlink{34}{\beamerbutton{→}}
+    \hyperlink{34}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=34]
@@ -772,10 +817,11 @@
             return 0;
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{33}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{33}{\beamerbutton{＜}}
     \space
-    \hyperlink{35}{\beamerbutton{→}}
+    \hyperlink{35}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[label=35]
@@ -788,10 +834,11 @@
     \begin{itembox}[l]{tips}
     math.hをインクルードするときは\texttt{gcc hoge.c -lm}を用いる.
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{34}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{34}{\beamerbutton{＜}}
     \space
-    \hyperlink{36}{\beamerbutton{→}}
+    \hyperlink{36}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{if else if文}
@@ -810,16 +857,17 @@
 
     }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{35}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{35}{\beamerbutton{＜}}
     \space
-    \hyperlink{37}{\beamerbutton{→}}
+    \hyperlink{37}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{continue/break/goto}
 \begin{frame}[t, fragile, label=37]
     \frametitle{continue/break/goto}
-    これらの処理をうまく使うことで,ループの処理を効率化できる.
+    ループの処理を行うときに、知っておくとと便利
     \begin{table}
     \centering
     \begin{tabular}{cl}
@@ -840,10 +888,11 @@
     \end{lstlisting}
     goto文は便利なように見えるが,何重ものネストから
     一気に抜け出す場合にのみ用いるべきである.
-    \vfill \hfill 
-    \hyperlink{36}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{36}{\beamerbutton{＜}}
     \space
-    \hyperlink{38}{\beamerbutton{→}}
+    \hyperlink{38}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{switch文}
@@ -868,10 +917,11 @@
             break;
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{37}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{37}{\beamerbutton{＜}}
     \space
-    \hyperlink{39}{\beamerbutton{→}}
+    \hyperlink{39}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=39]
@@ -893,10 +943,11 @@
                     count_1++;
                     break;
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{38}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{38}{\beamerbutton{＜}}
     \space
-    \hyperlink{40}{\beamerbutton{→}}
+    \hyperlink{40}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=40]
@@ -914,10 +965,11 @@
             return 0;
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{39}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{39}{\beamerbutton{＜}}
     \space
-    \hyperlink{41}{\beamerbutton{→}}
+    \hyperlink{41}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[label=41]
@@ -929,28 +981,31 @@
     \end{block}
     同様のコードをif\space else\space if文を用いて書くことができるため,
     あまり使われない.
-    \vfill \hfill 
-    \hyperlink{40}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{40}{\beamerbutton{＜}}
     \space
-    \hyperlink{42}{\beamerbutton{→}}
+    \hyperlink{42}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=42]
     \frametitle{演習問題}
-    \vfill \hfill 
-    \hyperlink{41}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{41}{\beamerbutton{＜}}
     \space
-    \hyperlink{43}{\beamerbutton{→}}
+    \hyperlink{43}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{関数}
 \begin{frame}[label=43]
     \frametitle{関数}
     \tableofcontents[sections={2, 8}]
-    \vfill \hfill 
-    \hyperlink{42}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{42}{\beamerbutton{＜}}
     \space
-    \hyperlink{44}{\beamerbutton{→}}
+    \hyperlink{44}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{関数の基本}
@@ -998,10 +1053,11 @@
                 ubuntuの場合\texttt{echo\space \$?}で確認できる.
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{43}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{43}{\beamerbutton{＜}}
     \space
-    \hyperlink{45}{\beamerbutton{→}}
+    \hyperlink{45}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{関数の作成}
@@ -1031,10 +1087,11 @@
     \end{lstlisting}
     　これらはプロトタイプ宣言と呼ばれ,関数を呼び出す前に
     記述しなければならない.(main文の上に書く)
-    \vfill \hfill 
-    \hyperlink{44}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{44}{\beamerbutton{＜}}
     \space
-    \hyperlink{46}{\beamerbutton{→}}
+    \hyperlink{46}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=46]
@@ -1052,10 +1109,11 @@
         なくてよい.しかし,main関数の上に関数の定義を置くと、コードの
         見やすさが損なわれるため,プロトタイプ宣言→main関数→関数の定義
         の順でコードを書くことをお勧めする.
-    \vfill \hfill 
-    \hyperlink{45}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{45}{\beamerbutton{＜}}
     \space
-    \hyperlink{47}{\beamerbutton{→}}
+    \hyperlink{47}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=47]
@@ -1098,10 +1156,11 @@
     \end{columns}
     　右の書き方であれば,自作関数をいくつ定義してもmain関数が
     必ず一番初めに定義されるので,見やすくなる.
-    \vfill \hfill 
-    \hyperlink{46}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{46}{\beamerbutton{＜}}
     \space
-    \hyperlink{48}{\beamerbutton{→}}
+    \hyperlink{48}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=48]
@@ -1127,10 +1186,11 @@
             return 0;
         }
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{47}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{47}{\beamerbutton{＜}}
     \space
-    \hyperlink{49}{\beamerbutton{→}}
+    \hyperlink{49}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=49]
@@ -1152,10 +1212,11 @@
             va_start(list, data); //initialize list
 
     \end{lstlisting}
-    \vfill \hfill 
-    \hyperlink{48}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{48}{\beamerbutton{＜}}
     \space
-    \hyperlink{50}{\beamerbutton{→}}
+    \hyperlink{50}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \begin{frame}[t, fragile, label=50]
@@ -1177,20 +1238,22 @@
     \end{block}
     　このような処理には配列を使うのが一般的である.例ということで
     許してほしい.
-    \vfill \hfill 
-    \hyperlink{49}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{49}{\beamerbutton{＜}}
     \space
-    \hyperlink{51}{\beamerbutton{→}}
+    \hyperlink{51}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{変数のあれこれ}
 \begin{frame}[label=51]
     \frametitle{変数のあれこれ}
     \tableofcontents[sections={2,9}]
-    \vfill \hfill 
-    \hyperlink{50}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{50}{\beamerbutton{＜}}
     \space
-    \hyperlink{52}{\beamerbutton{→}}
+    \hyperlink{52}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 \begin{frame}[c, fragile, label=52]
     \frametitle{ローカル変数とグローバル変数}
@@ -1208,10 +1271,11 @@
             \item スコープ:変数の有効範囲
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{51}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{51}{\beamerbutton{＜}}
     \space
-    \hyperlink{53}{\beamerbutton{→}}
+    \hyperlink{53}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{ローカル変数}
@@ -1245,10 +1309,11 @@
             静的ローカル変数,グローバル変数、静的グローバル変数
             はメモリの静的領域に配置される.
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{52}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{52}{\beamerbutton{＜}}
     \space
-    \hyperlink{54}{\beamerbutton{→}}
+    \hyperlink{54}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{グローバル変数}
@@ -1294,14 +1359,16 @@
         \begin{itemize}
             \item 関数も\texttt{static}をつけて宣言できる.(他ファイル
                 からの参照を許さくなる)
+            \vspace{-3pt}
             \item 他ファイルで宣言されたグローバル変数や,
                 関数を使うには\texttt{extern}をつけて宣言する.
         \end{itemize}
     \end{itembox}
-    \vfill \hfill 
-    \hyperlink{53}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{53}{\beamerbutton{＜}}
     \space
-    \hyperlink{55}{\beamerbutton{→}}
+    \hyperlink{55}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \subsection{定数の宣言}
@@ -1320,28 +1387,113 @@
         \item \texttt{enum}を使う
             %todo
     \end{itemize}
-    \vfill \hfill 
-    \hyperlink{54}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{54}{\beamerbutton{＜}}
     \space
-    \hyperlink{56}{\beamerbutton{→}}
+    \hyperlink{56}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
 \section{配列}
 \begin{frame}[label=56]
     \frametitle{配列}
     \tableofcontents[sections={2,10}]
-    \vfill \hfill 
-    \hyperlink{55}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{55}{\beamerbutton{＜}}
     \space
-    \hyperlink{57}{\beamerbutton{→}}
+    \hyperlink{57}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 
-\subsection{配列の基本}
+\subsection{配列の宣言}
 \begin{frame}[t, fragile, label=57]
-    \frametitle{配列の基本}
-    \vfill \hfill 
-    \hyperlink{56}{\beamerbutton{←}}
-    \space
-    \hyperlink{58}{\beamerbutton{→}}
+    \frametitle{配列の宣言}
+    　C言語の配列とは同じ型の、複数の値を一つの名前で扱う
+    ことができるデータ構造の一つである。より踏み込んだ説明を
+    するならば、メモリ上に同じ型の配列要素が連続して並んだ
+    領域のことである。
+    \vspace{-5pt}
+    \begin{lstlisting}[gobble=8, caption=Syntax of array declaration]
+        data_type array_name[size];
+
+        // N-dimensional array
+        data_type array_name[size1] [size2] ... [sizeN]; 
+    \end{lstlisting}
+    \vspace{-8pt}
+    \begin{table}
+    \centering
+        \begin{tabular}{cl}
+            \hline \vspace{-10pt}\\
+            data\_type & 配列の要素の型を宣言する.\\
+            array\_name & 配列には任意の名前を付けられる。\\
+            size & 配列の要素数。定数で指定する。\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \vspace{-3pt}
+    \begin{itembox}[l]{tips\space～ポインタへ向けての準備1～}
+        \vspace{-5pt}
+            　メモリとはデータを記憶するパーツのことで、読み書きの
+            できるRAM(Random Access Memory)と読み取り専用のROM
+            (Read OnlyMemory)の2種類がある。
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{56}{\beamerbutton{＜}}
+        \space
+        \hyperlink{58}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{配列の要素}
+\begin{frame}[t, fragile, label=58]
+    \frametitle{配列の要素}
+    　配列の個々の要素へはの次のようにしてアクセスできる。
+    \vspace{5pt}
+    \begin{lstlisting}[gobble=8]
+        array_name[index];
+    \end{lstlisting}
+    \vspace{-5pt}
+    \begin{table}
+    \centering
+        \begin{tabular}{cl}
+            \hline \vspace{-10pt}\\
+            \begin{tabular}{c}
+                インデックス\\
+                index
+            \end{tabular} &
+                \begin{tabular}{l}
+                    0～(配列のサイズ-1)までの整数型をとり、\\
+                    整数型であれば変数でもよい。\\
+                    配列の要素は変数と同じように扱える。
+                \end{tabular}\\
+            \hline
+        \end{tabular} 
+    \end{table}
+    **注意**\\
+    　C言語ではコード内で使われるインデックスの値が、インデックスの
+    とりうる値を超えているかの検査はコンパイル時も実行時も行われない。
+    インデックスの値が0～(size-1)にあることはプログラマの責任で
+    保証しなければならない。
+    \begin{itembox}[l]{tips\space～ポインタへ向けての準備2～}
+            \vspace{-5pt}
+            　一般的にメモリと言った際にはRAMを指すことが多い。
+            このスライドで何度か出るメモリもRAMを指している.
+            (より正確に言うと仮想メモリを指している。)
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{57}{\beamerbutton{＜}}
+        \space
+        \hyperlink{59}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{}
+\begin{frame}[t, fragile, label=00]
+    \frametitle{}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{00}{\beamerbutton{＜}}
+        \space
+        \hyperlink{00}{\beamerbutton{＞}}
+    \end{textblock*}
 \end{frame}
 \end{document}

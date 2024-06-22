@@ -1,20 +1,31 @@
-\frametitle{C言語の環境構築}
-    ubuntuで以下を打ち込む
-        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
-            sudo apt update
-            sudo apt install gcc
-        \end{lstlisting}
-    これで完了.下に使い方を示す。
-        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
-            gcc hoge.c
-            ./a.out
-        \end{lstlisting}
-    　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
-    a.outというファイルが生成される(math.hを使うときは末尾に-lm
-    とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
-    ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
-    強制終了できる.
-    \vfill \hfill
-    \hyperlink{6}{\beamerbutton{←}}
+\frametitle{コマンドなどなど}
+    　ubuntuは(Linuxディストリビューションの一つで,)
+    OS(Operating System)なので,
+    c言語を動かすためだけに用いるにはあまりにも十分すぎる環境である.
+    関係のない機能が多すぎて逆に使いにくいと感じるかもしれない.
+    しかし,今後PythonやGIT、ROSを扱う際にも使えるので、今のうちに
+    慣れておくとよいだろう.閉じたいときは右上×ボタンから閉じられる。
+    \begin{table}[h]
+        \caption{基本的なコマンド}
+        \label{commands}
+        \centering
+        \vspace{-5pt}
+        \begin{tabular}{cl}
+            \hline
+            コマンド & 説明\\
+            \hline \hline
+            ls & ディレクトリ及びファイルの表示\\
+            cd [DirectoryName] & ディレクトリの移動\\
+            mkdir [DirectoryName] & ディレクトリの作成\\
+            rmdir [DirectoryName] & ディレクトリの削除\\
+            touch [FileName] & ファイルの作成\\
+            rm [FileName] & ファイルの削除\\
+            explorer.exe . & エクスプローラーで開く\\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{5}{\beamerbutton{＜}}
     \space
-    \hyperlink{8}{\beamerbutton{→}}
+    \hyperlink{7}{\beamerbutton{＞}}
+    \end{textblock*}

@@ -18,7 +18,8 @@
                     複数行にまたげる.
         \end{itemize}
     \end{itembox}
-    \vfill \hfill
-    \hyperlink{10}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{10}{\beamerbutton{＜}}
     \space
-    \hyperlink{12}{\beamerbutton{→}}
+    \hyperlink{12}{\beamerbutton{＞}}
+    \end{textblock*}

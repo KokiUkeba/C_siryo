@@ -1,26 +1,44 @@
-\frametitle{サンプルコード}
-    \framesubtitle{ベクトルのノルムを計算する関数を作成する.}
-    \vspace{-10pt}
-    \begin{lstlisting}[gobble=8, caption=pra\_func.c]
-        #include<stdio.h>
-        #include<stdarg.h>
-        #include<math.h>
+\frametitle{関数の定義}
+    \framesubtitle{補足}
+    \vspace{-30pt}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+        \begin{column}{.45\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_1]
+                #include<stdio.h>
 
-        double Norm(int,...); //function declaration
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
 
-        int main(void)
-        {
-            double norm1, norm2 = 0;
+                int main(void)
+                {
+                    //body of the main funcion
+                }
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{.51\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_2]
+                #include<stdio.h>
 
-            norm1 = Norm(3, 2., 3., 4.); //call function
-            norm2 = Norm(3, 3., 4., 5.);
+                void hoge(int *);
 
-            printf("norm1=%e\n", norm1);
-            printf("norm2=%e\n", norm2);
-            return 0;
-        }
-    \end{lstlisting}
-    \vfill \hfill
-    \hyperlink{47}{\beamerbutton{←}}
+                int main(void)
+                {
+                    //body of the main function
+                }
+
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
+            \end{lstlisting}
+        \end{column}
+    \end{columns}
+    　右の書き方であれば,自作関数をいくつ定義してもmain関数が
+    必ず一番初めに定義されるので,見やすくなる.
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{46}{\beamerbutton{＜}}
     \space
-    \hyperlink{49}{\beamerbutton{→}}
+    \hyperlink{48}{\beamerbutton{＞}}
+    \end{textblock*}

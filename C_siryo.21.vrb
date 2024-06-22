@@ -1,22 +1,24 @@
-\frametitle{ビット演算子(その1)}
-    \begin{itemize}
-        \item \begin{verbatim}ビット毎の論理積:(式1)&(式2)\end{verbatim}
-            \qquad 各桁毎の論理積を返す.
-            \begin{block}{a $= 29 \& 17$}
-                a = 17\qquad $//29=11101_{(2)},17=10001_{(2)}$
-            \end{block}
-        \item ビット毎の排他的論理和:(式1)＾(式2)\\
-            \qquad 各桁毎の排他的論理和を返す.
-            \begin{block}{a = 29 ＾ 17}
-                a = 12\qquad $//29=11101_{(2)},17=10001_{(2)}$
-            \end{block}
-        \item ビット毎の論理和:(式1)｜(式2)\\
-            \qquad 各桁毎の論理和を返す.
-            \begin{block}{a = 29 ｜ 17}
-                a = 29\qquad $//29=11101_{(2)},17=10001_{(2)}$
-            \end{block}
-    \end{itemize}
-    \vfill \hfill
-    \hyperlink{21}{\beamerbutton{←}}
+\frametitle{関係演算子}
+    $>,<,>=,<=$のように記述する.\\
+    真の場合1,偽の場合0を返す.C言語では0以外の数値は,真偽値において
+    は真と解釈される.
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item 条件演算子: (式1)?(式2):(式3)\\
+                (式1)の真偽によって,(式2)か(式3)の値を返す.\\
+                ((式1)が真の場合(式２)の値を返す)
+                \begin{block}{a=((2==3)?10:20)}
+                    a = 20
+                \end{block}
+            \item コンマ演算子:(式1),(式2)\\
+                まず(式1)を評価し,式としては(式２)の値を返す.
+                \begin{block}{x = (a = 3, a + 2)}
+                    x = 5
+                \end{block}
+        \end{itemize}
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{20}{\beamerbutton{＜}}
     \space
-    \hyperlink{23}{\beamerbutton{→}}
+    \hyperlink{22}{\beamerbutton{＞}}
+    \end{textblock*}

@@ -1,24 +1,32 @@
-\frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, caption=pra\_if.c, label=pra-if]
-        #include<stdio.h>
-        #include<math.h>
-
-        int main(void)
-        {
-            double x = pow(exp(1), M_PI);
-            double y = pow(M_PI, exp(1));
-
-            if (x > y) {
-                printf("e^pi is larger.\n");
-            }
-            else {
-                printf("pi^e is larger.\n");
-            }
-
-            return 0;
+\frametitle{if文(条件分岐)}
+    ある条件を満たしたときに,行いたい処理があるときに使う.
+    \begin{lstlisting}[gobble=6, caption=Syntax\space of \space if, label=if_howto]
+        if (condition) {
+            //if body
         }
     \end{lstlisting}
-    \vfill \hfill
-    \hyperlink{33}{\beamerbutton{←}}
+    \begin{table}[h]
+    \centering
+        \begin{tabular}{cl}
+            \hline
+            condition & \begin{tabular}{l}
+                式の値が真の場合,if文内の処理が行われる.\\
+                偽の場合,if文は無視され続く文が実行される.
+                \end{tabular}\\
+            \hline
+        \end{tabular}
+    \end{table}
+    条件が満たされない場合に行いたい処理がある場合はelse節を使う.
+    \begin{lstlisting}[gobble=6, caption=Syntax\space of \space if-else, label=if_howto]
+        if (condition) {
+            //code executed when the condition is true
+        }
+        else {
+            //code executed when the condition is false
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{32}{\beamerbutton{＜}}
     \space
-    \hyperlink{35}{\beamerbutton{→}}
+    \hyperlink{34}{\beamerbutton{＞}}
+    \end{textblock*}

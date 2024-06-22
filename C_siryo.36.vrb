@@ -1,26 +1,19 @@
-\frametitle{continue/break/goto}
-    これらの処理をうまく使うことで,ループの処理を効率化できる.
-    \begin{table}
-    \centering
-    \begin{tabular}{cl}
-        \hline
-        continue; & 繰り返しループの途中で強制的に次の繰り返しに進める.\\
-        break; & 実行中のループを中断し,ループから抜け出す.\\
-        goto 名前; & 名前と同じ名札(ラベル)を付けた文に実行を移す.\\
-        \hline
-    \end{tabular}
-    \end{table}
-    \begin{lstlisting}[gobble=3, caption=Syntax of goto statement, label=goto_howto]
-    goto label;
-    .
-    .
-    .
-    label:
-        //statements
+\frametitle{if\space else\space if文}
+    if文を連続して用いる際は次のように記述する.
+    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space if-else-if, label=if_howto]
+    // any if-else ladder starts with an if statement only
+    if (condition) {
+
+    } else if (codition) {
+
+    }
+    ... // once if-else ladder can have multiple else if
+    } else { // at the end we put else
+
+    }
     \end{lstlisting}
-    goto文は便利なように見えるが,何重ものネストから
-    一気に抜け出す場合にのみ用いるべきである.
-    \vfill \hfill
-    \hyperlink{36}{\beamerbutton{←}}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{35}{\beamerbutton{＜}}
     \space
-    \hyperlink{38}{\beamerbutton{→}}
+    \hyperlink{37}{\beamerbutton{＞}}
+    \end{textblock*}

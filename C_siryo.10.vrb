@@ -1,24 +1,19 @@
-\frametitle{解説}
-    \framesubtitle{今回記述した内容は,今後のコード作成でも
-        必ず記述することになるものなので,
-        始めは理解するより丸暗記することをお勧めする.}
-    \begin{itemize}
-        \item '\#include\verb|<|stdio.h\verb|>|':標準入出力ライブラリを
-                インクルードする.
-        \item 'int main(void)': プログラムのエントリポイント.
-                main関数はプログラムの開始地点となる.
-        \item 'printf("Hello,*\verb|\| n");':画面に"Hello,
-                World!"を表示する\verb|\| nは改行文字.
-        \item 'return 0;':関数の終了を示す.0は正常終了を意味する。
-    \end{itemize}
-    \begin{itembox}[l]{コメントの挿入}
-        \begin{itemize}
-            \item //:以降から行末までがコメントになる.
-            \item /* */:/*と*/で囲まれた部分がコメントになる.
-                    複数行にまたげる.
-        \end{itemize}
-    \end{itembox}
-    \vfill \hfill
-    \hyperlink{10}{\beamerbutton{←}}
+\frametitle{Hello, World!}
+    \framesubtitle{とりあえずc言語を動かしてみる}
+    \begin{lstlisting}[gobble=8, caption=hello.c, label=hello]
+        #include<stdio.h>
+
+        int main(void)
+        {
+            printf("Hello, World!\n");
+            return 0;
+        }
+    \end{lstlisting}
+    \begin{block}{出力}
+        Hello world
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+    \hyperlink{9}{\beamerbutton{＜}}
     \space
-    \hyperlink{12}{\beamerbutton{→}}
+    \hyperlink{11}{\beamerbutton{＞}}
+    \end{textblock*}
