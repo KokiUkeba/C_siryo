@@ -1,25 +1,6 @@
-\frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, caption=pra\_if.c, label=pra-if]
-        #include<stdio.h>
-        #include<math.h>
-
-        int main(void)
-        {
-            double x = pow(exp(1), M_PI);
-            double y = pow(M_PI, exp(1));
-
-            if (x > y) {
-                printf("e^pi is larger.\n");
-            }
-            else {
-                printf("pi^e is larger.\n");
-            }
-
-            return 0;
-        }
-    \end{lstlisting}
+\frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{33}{\beamerbutton{＜}}
+    \hyperlink{31}{\beamerbutton{＜}}
     \space
-    \hyperlink{35}{\beamerbutton{＞}}
+    \hyperlink{33}{\beamerbutton{＞}}
     \end{textblock*}

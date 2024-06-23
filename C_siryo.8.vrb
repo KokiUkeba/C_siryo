@@ -1,33 +1,31 @@
-\frametitle{テキストエディタの使い方}
-    ubuntuにデフォルトでインストールされているvimを紹介する.
+\frametitle{コマンドなどなど}
+    　ubuntuは(Linuxディストリビューションの一つで,)
+    OS(Operating System)なので,
+    c言語を動かすためだけに用いるにはあまりにも十分すぎる環境である.
+    関係のない機能が多すぎて逆に使いにくいと感じるかもしれない.
+    しかし,今後PythonやGIT、ROSを扱う際にも使えるので、今のうちに
+    慣れておくとよいだろう.閉じたいときは右上×ボタンから閉じられる。
     \begin{table}[h]
-        \caption{vimの使い方}
-        \label{vim_howto}
+        \caption{基本的なコマンド}
+        \label{commands}
         \centering
+        \vspace{-5pt}
         \begin{tabular}{cl}
             \hline
-            \multicolumn{2}{c}{\textbf{ubuntu}}\\
+            コマンド & 説明\\
             \hline \hline
-            vi [FileName] & ファイルを作成し開く\\
-            \hline
-            \multicolumn{2}{c}{\textbf{Normal mode}}\\
-            \hline \hline
-            i & Insert modeへ(文字を入力できる)\\
-            : & Command-line modeへ\\
-            \hline
-            \multicolumn{2}{c}{\textbf{Command-line mode}}\\
-            \hline \hline
-            w & 変更の保存\\
-            q & vimの終了\\
-            wq & 上書き保存して終了する\\
-            q! & 変更を破棄し終了する\\
+            ls & ディレクトリ及びファイルの表示\\
+            cd [DirectoryName] & ディレクトリの移動\\
+            mkdir [DirectoryName] & ディレクトリの作成\\
+            rmdir [DirectoryName] & ディレクトリの削除\\
+            touch [FileName] & ファイルの作成\\
+            rm [FileName] & ファイルの削除\\
+            explorer.exe . & エクスプローラーで開く\\
             \hline
         \end{tabular}
     \end{table}
-    他にもいろいろあるので,興味があれば調べるのが良い.
-        (\texttt{vimtutor}など)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{7}{\beamerbutton{＜}}
+    \hyperlink{5}{\beamerbutton{＜}}
     \space
-    \hyperlink{9}{\beamerbutton{＞}}
+    \hyperlink{7}{\beamerbutton{＞}}
     \end{textblock*}

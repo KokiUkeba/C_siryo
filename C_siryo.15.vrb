@@ -1,23 +1,24 @@
-\frametitle{演算(その1)}
-    加算は+,減算は-、乗算は*、除算は/である.int型同士の商は
-    少数切り捨ての整数となる.また,剰余は\%で求める。
-    \begin{block}{9 + 2}
-        11
-    \end{block}
-    \begin{block}{9 - 2}
-        7
-    \end{block}
-    \begin{block}{9 * 2}
-        18
-    \end{block}
-    \begin{block}{9 / 2}
-        4
-    \end{block}
-    \begin{block}{9 \% 2}
-        1
-    \end{block}
+\frametitle{変数とデータ型}
+    \begin{lstlisting}[gobble=8, caption=variable.c, label=variable]
+        #include<stdio.h>
+
+        int main(void)
+        {
+            int a = 10;         //integer
+            float b = 3.14;     //floating point
+            double c = 2.71828; //double precision floating point
+            char d = 'A';       //character
+
+            printf("a = %d\n", a);
+            printf("b = %f\n", b);
+            printf("c = %e\n", c);
+            printf("d = %c\n", d);
+
+            return 0;
+        }
+    \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{14}{\beamerbutton{＜}}
+    \hyperlink{12}{\beamerbutton{＜}}
     \space
-    \hyperlink{16}{\beamerbutton{＞}}
+    \hyperlink{14}{\beamerbutton{＞}}
     \end{textblock*}

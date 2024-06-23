@@ -1,24 +1,18 @@
-\frametitle{関係演算子}
-    $>,<,>=,<=$のように記述する.\\
-    真の場合1,偽の場合0を返す.C言語では0以外の数値は,真偽値において
-    は真と解釈される.
-    \begin{itembox}[l]{tips}
-        \begin{itemize}
-            \item 条件演算子: (式1)?(式2):(式3)\\
-                (式1)の真偽によって,(式2)か(式3)の値を返す.\\
-                ((式1)が真の場合(式２)の値を返す)
-                \begin{block}{a=((2==3)?10:20)}
-                    a = 20
-                \end{block}
-            \item コンマ演算子:(式1),(式2)\\
-                まず(式1)を評価し,式としては(式２)の値を返す.
-                \begin{block}{x = (a = 3, a + 2)}
-                    x = 5
-                \end{block}
-        \end{itemize}
-    \end{itembox}
+\frametitle{論理条件演算子(その1)}
+    \begin{itemize}
+        \item 等値演算子:(左辺)==(右辺)\\
+            \qquad 両辺が等しい場合１,等しくない場合０を返す.
+            \begin{block}{int a = (2==2)}
+                a = 1
+            \end{block}
+        \item 非等値演算子:(左辺)!=(右辺)\\
+            \qquad 両辺が等しい場合０,等しくない場合０を返す.
+            \begin{block}{int a = (2!=2)}
+                a = 0
+            \end{block}
+    \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{20}{\beamerbutton{＜}}
+    \hyperlink{18}{\beamerbutton{＜}}
     \space
-    \hyperlink{22}{\beamerbutton{＞}}
+    \hyperlink{20}{\beamerbutton{＞}}
     \end{textblock*}

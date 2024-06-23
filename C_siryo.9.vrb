@@ -1,9 +1,21 @@
-\frametitle{C言語とは}
-    　1972年にデニス・リッチーによって開発された汎用プログラミング言語.
-    C言語は他の多くのプログラミング言語の基礎となっており,その
-    シンプルさと効率性が特徴である.
+\frametitle{C言語の環境構築}
+    ubuntuで以下を打ち込む
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
+            sudo apt update
+            sudo apt install gcc
+        \end{lstlisting}
+    これで完了.下に使い方を示す。
+        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
+            gcc hoge.c // g++ hoge.cpp
+            ./a.out
+        \end{lstlisting}
+    　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
+    a.outというファイルが生成される(math.hを使うときは末尾に-lm
+    とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
+    ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
+    強制終了できる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{8}{\beamerbutton{＜}}
+    \hyperlink{6}{\beamerbutton{＜}}
     \space
-    \hyperlink{10}{\beamerbutton{＞}}
+    \hyperlink{8}{\beamerbutton{＞}}
     \end{textblock*}

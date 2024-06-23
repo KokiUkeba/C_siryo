@@ -1,24 +1,24 @@
-\frametitle{ビット演算子(その2)}
-    \begin{itemize}
-        \item ビット反転演算子:\~\space (式)\\
-            \qquad (式)の全ビットを反転させる.
-            \begin{block}{a = \~\space 29}
-                -30 \qquad //8bit分計算されている
-            \end{block}
-        \item シフト演算子:(式1)$<<$(式2)\\
-            \qquad (式1)の値を(式2)のビット数だけシフトさせる.
-            \begin{block}{a = 29$<<$2}
-                a = 116 \qquad //左シフトは(式1)を$2^{\textrm{n}}$倍した
-                値となる
-            \end{block}
-            \qquad 同様にして右シフトもできる.
-            \begin{block}{a = 29$>>$2}
-                a = 7 \qquad //右シフトは(式1)を$2^{\textrm{-n}}$倍した
-                整数値となる
-            \end{block}
-    \end{itemize}
+\frametitle{関係演算子}
+    $>,<,>=,<=$のように記述する.\\
+    真の場合1,偽の場合0を返す.C言語では0以外の数値は,真偽値において
+    は真と解釈される.
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item 条件演算子: (式1)?(式2):(式3)\\
+                (式1)の真偽によって,(式2)か(式3)の値を返す.\\
+                ((式1)が真の場合(式２)の値を返す)
+                \begin{block}{a=((2==3)?10:20)}
+                    a = 20
+                \end{block}
+            \item コンマ演算子:(式1),(式2)\\
+                まず(式1)を評価し,式としては(式２)の値を返す.
+                \begin{block}{x = (a = 3, a + 2)}
+                    x = 5
+                \end{block}
+        \end{itemize}
+    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{22}{\beamerbutton{＜}}
+    \hyperlink{20}{\beamerbutton{＜}}
     \space
-    \hyperlink{24}{\beamerbutton{＞}}
+    \hyperlink{22}{\beamerbutton{＞}}
     \end{textblock*}

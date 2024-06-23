@@ -1,6 +1,34 @@
-\frametitle{演習問題}
+\frametitle{for文(反復処理)}
+    繰り返しの回数が決まっている反復処理にはfor文が使われる.
+    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space for\space loop, label=for_howto]
+    for (initialization; condition; updation) {
+        //body of the for loop
+    }
+    \end{lstlisting}
+    \begin{tabular}{cl}
+        \hline
+        initialization & \begin{tabular}{l}
+            for文に入るとき1度だけ実行される.\\
+            繰り返しをカウントする変数とその初期値を割り当てる.\\
+            例:\space int\space i\space =\space 0
+            \end{tabular}\\
+        \hline
+        condition & \begin{tabular}{l}
+            式の値が評価され,真の場合for文内の処理を実行する.\\
+            偽の場合for文処理を実行せず抜け出す.\\
+            例:\space i$ < $10000
+            \end{tabular}\\
+        \hline
+        updation & \begin{tabular}{l}
+            for文内の処理の後,initializationで割り当てた変数の\\
+            インクリメントやデクリメント,またはその他の処理を\\
+            記述する.\\
+            例:\space i++
+            \end{tabular}\\
+        \hline
+    \end{tabular}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{27}{\beamerbutton{＜}}
+    \hyperlink{25}{\beamerbutton{＜}}
     \space
-    \hyperlink{29}{\beamerbutton{＞}}
+    \hyperlink{27}{\beamerbutton{＞}}
     \end{textblock*}

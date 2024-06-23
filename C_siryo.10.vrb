@@ -1,19 +1,33 @@
-\frametitle{Hello, World!}
-    \framesubtitle{とりあえずc言語を動かしてみる}
-    \begin{lstlisting}[gobble=8, caption=hello.c, label=hello]
-        #include<stdio.h>
-
-        int main(void)
-        {
-            printf("Hello, World!\n");
-            return 0;
-        }
-    \end{lstlisting}
-    \begin{block}{出力}
-        Hello world
-    \end{block}
+\frametitle{テキストエディタの使い方}
+    ubuntuにデフォルトでインストールされているvimを紹介する.
+    \begin{table}[h]
+        \caption{vimの使い方}
+        \label{vim_howto}
+        \centering
+        \begin{tabular}{cl}
+            \hline
+            \multicolumn{2}{c}{\textbf{ubuntu}}\\
+            \hline \hline
+            vi [FileName] & ファイルを作成し開く\\
+            \hline
+            \multicolumn{2}{c}{\textbf{Normal mode}}\\
+            \hline \hline
+            i & Insert modeへ(文字を入力できる)\\
+            : & Command-line modeへ\\
+            \hline
+            \multicolumn{2}{c}{\textbf{Command-line mode}}\\
+            \hline \hline
+            w & 変更の保存\\
+            q & vimの終了\\
+            wq & 上書き保存して終了する\\
+            q! & 変更を破棄し終了する\\
+            \hline
+        \end{tabular}
+    \end{table}
+    他にもいろいろあるので,興味があれば調べるのが良い.
+        (\texttt{vimtutor}など)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{9}{\beamerbutton{＜}}
+    \hyperlink{7}{\beamerbutton{＜}}
     \space
-    \hyperlink{11}{\beamerbutton{＞}}
+    \hyperlink{9}{\beamerbutton{＞}}
     \end{textblock*}

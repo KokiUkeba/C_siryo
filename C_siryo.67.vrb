@@ -1,0 +1,49 @@
+\frametitle{図にしてみた}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+    \begin{column}{.55\linewidth}
+    　例として、\texttt{char a = 'A';}の宣言により、図(メモリ)の青色の
+    領域に値が格納されたとする。私たちはここに格納された値に\texttt
+    {a}を用いてアクセスし、CPUは\texttt{12}を用いてアクセスする。\\
+    　また、\texttt{char b[4];}により、緑色の領域が確保されたとする。このとき\texttt{b[0]
+    }を指すアドレスは1,\texttt{b[3]}を指すアドレスは4となる。
+    \end{column}
+    \begin{column}{.45\linewidth}
+    \vspace{-12pt}
+    \begin{figure}[t]
+    \scalebox{0.6}{
+    \begin{tikzpicture}
+        \foreach \i in {0, 1, ..., 15} {
+            \draw (0, \i*0.5) -- (8, \i*0.5);
+            \node[left] at (0, \i*0.5 + 0.25) {\texttt{\i}};
+            \draw (0, \i*0.5) -- (0, \i*0.5 + 0.5);
+            \draw (8, \i*0.5) -- (8, \i*0.5 + 0.5);
+        }
+
+        \draw (0, 8) -- (8, 8);
+
+        \foreach \i in {12} {
+            \fill[blue!20] (0, \i*0.5) rectangle (8, \i*0.5 + 0.5);
+        }
+        \foreach \i in {1, 2, 3, 4 } {
+            \fill[green!20] (0, \i*0.5) rectangle (8, \i*0.5 + 0.5);
+        }
+        \node at (4, 12*0.5 + 0.25) {\texttt{A}};
+        \node at (4, 1*0.5 + 0.25) {\texttt{b[0]}};
+        \node at (4, 2*0.5 + 0.25) {\texttt{b[1]}};
+        \node at (4, 3*0.5 + 0.25) {\texttt{b[2]}};
+        \node at (4, 4*0.5 + 0.25) {\texttt{b[3]}};
+    \end{tikzpicture}
+    }
+    \caption{メモリアドレスとデータ}
+    \vspace{-10pt}
+    \subcaption{左側の数値はアドレスを表す}
+    \vspace{-10pt}
+    \subcaption{セル1つが1[byte]を表す}
+    \end{figure}
+    \end{column}
+    \end{columns}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{63}{\beamerbutton{＜}}
+        \space
+        \hyperlink{65}{\beamerbutton{＞}}
+    \end{textblock*}

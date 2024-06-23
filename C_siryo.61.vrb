@@ -1,0 +1,25 @@
+\frametitle{配列の初期化}
+    　配列の初期値は不定であるため、初期化を行う必要がある。
+    大きさが10000程度の配列を宣言し、一度確認してみるとよいだろう。
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Array\space\space Initialization]
+        // Initialization with Declaration
+        int a[3] = {1, 2, 3};
+        int b[10000] = {1, 0, 2, 0, 3}; // **Other Elements
+                                         // are Initialized to Zero
+
+        // Initialization with Declaration without Size
+        double c[] = {1, 2 ,3, 4, 5, 6};
+
+        // Initialization after Declaration (Using Loops)
+        int d[10000];
+        for (int i = 0; i < 10000; i++) {
+            d[i] = i;
+        }
+    \end{lstlisting}
+    **\space この方法で初期化したとき、環境によっては他の要素が不定と
+    なる場合がある。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{58}{\beamerbutton{＜}}
+        \space
+        \hyperlink{60}{\beamerbutton{＞}}
+    \end{textblock*}

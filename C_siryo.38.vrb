@@ -1,25 +1,19 @@
-\frametitle{switch文}
-    \begin{lstlisting}[gobble=6, caption=Syntax\space of\space switch\space statement, label=switch_howto]
-        switch (expression) {
-        case value1:
-            statement_1;
-            break;
-        case value2:
-            statement_2;
-            break;
-        .
-        .
-        .
-        case value_n:
-            statement_n;
-            break;
-        default:
-            default statement;
-            break;
-        }
+\frametitle{if\space else\space if文}
+    if文を連続して用いる際は次のように記述する.
+    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space if-else-if, label=if_howto]
+    // any if-else ladder starts with an if statement only
+    if (condition) {
+
+    } else if (codition) {
+
+    }
+    ... // once if-else ladder can have multiple else if
+    } else { // at the end we put else
+
+    }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{37}{\beamerbutton{＜}}
+    \hyperlink{35}{\beamerbutton{＜}}
     \space
-    \hyperlink{39}{\beamerbutton{＞}}
+    \hyperlink{37}{\beamerbutton{＞}}
     \end{textblock*}

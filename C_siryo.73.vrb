@@ -1,0 +1,6 @@
+\frametitle{ポインタのポインタ}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{69}{\beamerbutton{＜}}
+        \space
+        \hyperlink{71}{\beamerbutton{＞}}
+    \end{textblock*}

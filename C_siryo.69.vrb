@@ -1,0 +1,20 @@
+\frametitle{ポインタの基本}
+    \begin{itemize}
+        \item ポインタ\\
+            変数のアドレスを値として格納できる変数をポインタという。
+        \item ポインタの型\\
+            ポインタには型があり、特定の型の変数を表すアドレスしか格納
+            できない。
+        \item ポインタの宣言\\
+            変数名の前に*(ポインタ宣言子)をつければよい。
+    \end{itemize}
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Declaration]
+        int *pint;
+        double *px, *py;
+        int i, *pi;
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{65}{\beamerbutton{＜}}
+        \space
+        \hyperlink{67}{\beamerbutton{＞}}
+    \end{textblock*}

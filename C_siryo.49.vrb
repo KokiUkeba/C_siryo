@@ -1,23 +1,44 @@
-\frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, firstnumber=18, caption=pra\_func.c]
-        double Norm(int data,...) //function definition
-        {
-            va_list list; //va_list type declaration
-            double value, norm_squared = 0;
-            int i;
+\frametitle{関数の定義}
+    \framesubtitle{補足}
+    \vspace{-30pt}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+        \begin{column}{.45\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_1]
+                #include<stdio.h>
 
-            //printf("demension=%d\n", data);
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
 
-            if (data < 1) {
-                perror("data error");
-                return 1;
-            }
+                int main(void)
+                {
+                    //body of the main funcion
+                }
+            \end{lstlisting}
+        \end{column}
+        \begin{column}{.51\linewidth}
+            \begin{lstlisting}[gobble=16, caption=Example\_2]
+                #include<stdio.h>
 
-            va_start(list, data); //initialize list
+                void hoge(int *);
 
-    \end{lstlisting}
+                int main(void)
+                {
+                    //body of the main function
+                }
+
+                void hoge(int *para)
+                {
+                    //body of the hoge function
+                }
+            \end{lstlisting}
+        \end{column}
+    \end{columns}
+    　右の書き方であれば,自作関数をいくつ定義してもmain関数が
+    必ず一番初めに定義されるので,見やすくなる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{48}{\beamerbutton{＜}}
+    \hyperlink{46}{\beamerbutton{＜}}
     \space
-    \hyperlink{50}{\beamerbutton{＞}}
+    \hyperlink{48}{\beamerbutton{＞}}
     \end{textblock*}

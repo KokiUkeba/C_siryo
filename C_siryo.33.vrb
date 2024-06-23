@@ -1,32 +1,16 @@
-\frametitle{if文(条件分岐)}
-    ある条件を満たしたときに,行いたい処理があるときに使う.
-    \begin{lstlisting}[gobble=6, caption=Syntax\space of \space if, label=if_howto]
-        if (condition) {
-            //if body
-        }
+\frametitle{do\space while文}
+    始めに文内の処理を行い,その後while文と同じ挙動をする.\\
+    必ず一回は文内の処理を行いたいときに使う.
+    \begin{lstlisting}[gobble=6, caption=Syntax\space of\space do\space while\space loop, label=dowhile_howto]
+        do {
+            // body of do-while loop
+        } while (condition);
     \end{lstlisting}
-    \begin{table}[h]
-    \centering
-        \begin{tabular}{cl}
-            \hline
-            condition & \begin{tabular}{l}
-                式の値が真の場合,if文内の処理が行われる.\\
-                偽の場合,if文は無視され続く文が実行される.
-                \end{tabular}\\
-            \hline
-        \end{tabular}
-    \end{table}
-    条件が満たされない場合に行いたい処理がある場合はelse節を使う.
-    \begin{lstlisting}[gobble=6, caption=Syntax\space of \space if-else, label=if_howto]
-        if (condition) {
-            //code executed when the condition is true
-        }
-        else {
-            //code executed when the condition is false
-        }
-    \end{lstlisting}
+    「while文ではループに入る条件を決め,do\space while文ではループから出る
+    条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
+    変わらないときが多く,そのようなときはwhile文を使うのがよい.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{32}{\beamerbutton{＜}}
+    \hyperlink{30}{\beamerbutton{＜}}
     \space
-    \hyperlink{34}{\beamerbutton{＞}}
+    \hyperlink{32}{\beamerbutton{＞}}
     \end{textblock*}

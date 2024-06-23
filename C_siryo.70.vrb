@@ -1,0 +1,21 @@
+\frametitle{ポインタの初期化}
+    　ポインタとして宣言した変数にはアドレスを代入する。変数のアドレス
+    は\verb|&|(アドレス演算子)を変数に作用させることで得る。
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Initialization]
+        int n, *np;
+        double d, *dp;
+
+        np = &n;
+        dp = &d;
+    \end{lstlisting}
+    　アドレスの値が気になるときはフォーマット指定子を\texttt{\%p}とし
+    て表示させてみるとよいだろう。(16進数表記で出力される。)
+    \begin{itembox}[l]{tips}
+        \scalebox{2.4}{\textbf{ポインタには変数のアドレス}}\\
+        が格納される。
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{66}{\beamerbutton{＜}}
+        \space
+        \hyperlink{68}{\beamerbutton{＞}}
+    \end{textblock*}

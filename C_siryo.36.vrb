@@ -1,19 +1,25 @@
-\frametitle{if\space else\space if文}
-    if文を連続して用いる際は次のように記述する.
-    \begin{lstlisting}[gobble=3, caption=Syntax\space of\space if-else-if, label=if_howto]
-    // any if-else ladder starts with an if statement only
-    if (condition) {
+\frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=8, caption=pra\_if.c, label=pra-if]
+        #include<stdio.h>
+        #include<math.h>
 
-    } else if (codition) {
+        int main(void)
+        {
+            double x = pow(exp(1), M_PI);
+            double y = pow(M_PI, exp(1));
 
-    }
-    ... // once if-else ladder can have multiple else if
-    } else { // at the end we put else
+            if (x > y) {
+                printf("e^pi is larger.\n");
+            }
+            else {
+                printf("pi^e is larger.\n");
+            }
 
-    }
+            return 0;
+        }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{35}{\beamerbutton{＜}}
+    \hyperlink{33}{\beamerbutton{＜}}
     \space
-    \hyperlink{37}{\beamerbutton{＞}}
+    \hyperlink{35}{\beamerbutton{＞}}
     \end{textblock*}

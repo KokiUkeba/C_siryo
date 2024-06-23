@@ -1,24 +1,25 @@
-\frametitle{変数とデータ型}
-    \begin{lstlisting}[gobble=8, caption=variable.c, label=variable]
-        #include<stdio.h>
-
-        int main(void)
-        {
-            int a = 10;         //integer
-            float b = 3.14;     //floating point
-            double c = 2.71828; //double precision floating point
-            char d = 'A';       //character
-
-            printf("a = %d\n", a);
-            printf("b = %f\n", b);
-            printf("c = %e\n", c);
-            printf("d = %c\n", d);
-
-            return 0;
-        }
-    \end{lstlisting}
+\frametitle{解説}
+    \framesubtitle{今回記述した内容は,今後のコード作成でも
+        必ず記述することになるものなので,
+        始めは理解するより丸暗記することをお勧めする.}
+    \begin{itemize}
+        \item '\#include\verb|<|stdio.h\verb|>|':標準入出力ライブラリを
+                インクルードする.
+        \item 'int main(void)': プログラムのエントリポイント.
+                main関数はプログラムの開始地点となる.
+        \item 'printf("Hello,*\verb|\| n");':画面に"Hello,
+                World!"を表示する\verb|\| nは改行文字.
+        \item 'return 0;':関数の終了を示す.0は正常終了を意味する。
+    \end{itemize}
+    \begin{itembox}[l]{コメントの挿入}
+        \begin{itemize}
+            \item //:以降から行末までがコメントになる.
+            \item /* */:/*と*/で囲まれた部分がコメントになる.
+                    複数行にまたげる.
+        \end{itemize}
+    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{12}{\beamerbutton{＜}}
+    \hyperlink{10}{\beamerbutton{＜}}
     \space
-    \hyperlink{14}{\beamerbutton{＞}}
+    \hyperlink{12}{\beamerbutton{＞}}
     \end{textblock*}

@@ -1,23 +1,27 @@
 \frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, firstnumber=32, caption=pra\_func.c]
-            for (i = 0; i < data; i++) {
-                value = va_arg(list, double);
-                //printf("data%d=%f\n", i, value);
-                norm_squared += pow(value, 2);
-            }
+    \framesubtitle{ベクトルのノルムを計算する関数を作成する.}
+    \vspace{-10pt}
+    \begin{lstlisting}[gobble=8, caption=pra\_func.c]
+        #include<stdio.h>
+        #include<stdarg.h>
+        #include<math.h>
 
-            va_end(list); //release list
-            return sqrt(norm_squared);
+        double Norm(int,...); //function declaration
+
+        int main(void)
+        {
+            double norm1, norm2 = 0;
+
+            norm1 = Norm(3, 2., 3., 4.); //call function
+            norm2 = Norm(3, 3., 4., 5.);
+
+            printf("norm1=%e\n", norm1);
+            printf("norm2=%e\n", norm2);
+            return 0;
         }
     \end{lstlisting}
-    \begin{block}{出力}
-        norm1=5.385165e+00\\
-        norm2=7.071068e+00
-    \end{block}
-    　このような処理には配列を使うのが一般的である.例ということで
-    許してほしい.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{49}{\beamerbutton{＜}}
+    \hyperlink{47}{\beamerbutton{＜}}
     \space
-    \hyperlink{51}{\beamerbutton{＞}}
+    \hyperlink{49}{\beamerbutton{＞}}
     \end{textblock*}

@@ -15,6 +15,9 @@
 \usepackage{hyperref}
 \usepackage{listings, jvlisting}
 \usepackage{caption, float}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
 \usepackage[absolute, overlay]{textpos}
 \usepackage{layout}
 %\usepackage[colorgrid, gridunit=pt, texcoord]{eso-pic}
@@ -53,6 +56,7 @@
  tabsize=4,
 }
 \renewcommand{\tablename}{表}
+\renewcommand{\figurename}{}
 \renewcommand{\lstlistingname}{}
 
 \title{資料}
@@ -73,7 +77,7 @@
 \end{frame}
 
 \section{目次}
-\begin{frame}[allowframebreaks, label=3]
+\begin{frame}[allowframebreaks]
     \frametitle{目次}
     \tableofcontents
 \end{frame}
@@ -83,9 +87,7 @@
     \frametitle{環境構築}
     \framesubtitle{wslを用いた環境作りを行う}
     \tableofcontents[sections={2,3}]
-    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{3}{\beamerbutton{＜}}
-        \space
+    \begin{textblock*}{0.3\linewidth}(317.45pt, 263pt)
         \hyperlink{5}{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
@@ -1431,12 +1433,6 @@
         \end{tabular}
     \end{table}
     \vspace{-3pt}
-    \begin{itembox}[l]{tips\space～ポインタへ向けての準備1～}
-        \vspace{-5pt}
-            　メモリとはデータを記憶するパーツのことで、読み書きの
-            できるRAM(Random Access Memory)と読み取り専用のROM
-            (Read OnlyMemory)の2種類がある。
-    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
         \hyperlink{56}{\beamerbutton{＜}}
         \space
@@ -1448,7 +1444,8 @@
 \begin{frame}[t, fragile, label=58]
     \frametitle{配列の要素}
     　配列の個々の要素へはの次のようにしてアクセスできる。
-    \vspace{5pt}
+        配列の要素は変数と同じように扱える。
+    %\vspace{5pt}
     \begin{lstlisting}[gobble=8]
         array_name[index];
     \end{lstlisting}
@@ -1463,8 +1460,7 @@
             \end{tabular} &
                 \begin{tabular}{l}
                     0～(配列のサイズ-1)までの整数型をとり、\\
-                    整数型であれば変数でもよい。\\
-                    配列の要素は変数と同じように扱える。
+                    整数型であれば変数でもよい。
                 \end{tabular}\\
             \hline
         \end{tabular} 
@@ -1472,14 +1468,8 @@
     **注意**\\
     　C言語ではコード内で使われるインデックスの値が、インデックスの
     とりうる値を超えているかの検査はコンパイル時も実行時も行われない。
-    インデックスの値が0～(size-1)にあることはプログラマの責任で
-    保証しなければならない。
-    \begin{itembox}[l]{tips\space～ポインタへ向けての準備2～}
-            \vspace{-5pt}
-            　一般的にメモリと言った際にはRAMを指すことが多い。
-            このスライドで何度か出るメモリもRAMを指している.
-            (より正確に言うと仮想メモリを指している。)
-    \end{itembox}
+    インデックスの値が0～(size-1)にあるかどうかには十分気を付けること。
+    (配列外の値にアクセスできるが、エラーは出ない)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
         \hyperlink{57}{\beamerbutton{＜}}
         \space
@@ -1487,13 +1477,342 @@
     \end{textblock*}
 \end{frame}
 
-\subsection{}
-\begin{frame}[t, fragile, label=00]
-    \frametitle{}
+\subsection{配列の初期化}
+\begin{frame}[t, fragile, label=59]
+    \frametitle{配列の初期化}
+    　配列の初期値は不定であるため、初期化を行う必要がある。
+    大きさが10000程度の配列を宣言し、一度確認してみるとよいだろう。
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Array\space\space Initialization]
+        // Initialization with Declaration
+        int a[3] = {1, 2, 3};
+        int b[10000] = {1, 0, 2, 0, 3}; // **Other Elements  
+                                         // are Initialized to Zero
+        
+        // Initialization with Declaration without Size
+        double c[] = {1, 2 ,3, 4, 5, 6};
+
+        // Initialization after Declaration (Using Loops)
+        int d[10000];
+        for (int i = 0; i < 10000; i++) {
+            d[i] = i;
+        }
+    \end{lstlisting}
+    **\space この方法で初期化したとき、環境によっては他の要素が不定と
+    なる場合がある。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{00}{\beamerbutton{＜}}
+        \hyperlink{58}{\beamerbutton{＜}}
         \space
-        \hyperlink{00}{\beamerbutton{＞}}
+        \hyperlink{60}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{サンプルコード}
+\begin{frame}[t, fragile, label=60]
+    \frametitle{サンプルコード}
+    \framesubtitle{配列は列ベクトルとみなすことができるため、
+    今回はベクトルの合成を考える。}
+    \begin{lstlisting}[gobble=8, caption=pra\_array.c]
+        #include<stdio.h>
+
+        int main(void) 
+        {
+            double a[3] = {3, 5, 3};
+            double b[3] = {1, 5, 7};
+
+            double c[3];
+            for (int i = 0; i < 3; i++) {
+                c[i] = a[i] + b[i];
+                printf("c[%d]=%f\n", i, c[i]);
+            }
+            
+            return 0;
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{59}{\beamerbutton{＜}}
+        \space
+        \hyperlink{61}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[c, fragile, label=61]
+    \frametitle{サンプルコード}
+    \begin{block}{出力}
+        c[0]=4.000000\\
+        c[1]=10.000000\\
+        c[2]=10.000000\\
+    \end{block}
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item sizeof演算子\\
+                 変数に対して作用させることで、変数の占める領域のサイズ
+                 がバイト単位で得られる。配列名に対して作用させることで
+                 、その配列が占める領域のサイズが得られる。\\
+                 例:\space \texttt{a = sizeof(int);}\\
+                 aにはint型のメモリサイズである4が代入される。
+        \end{itemize}
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{60}{\beamerbutton{＜}}
+        \space
+        \hyperlink{62}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile, label=62]
+    \frametitle{演習問題}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{61}{\beamerbutton{＜}}
+        \space
+        \hyperlink{63}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\section{ポインタへ向けての準備}
+\subsection{メモリ}
+\begin{frame}[t, fragile, label=61]
+    \frametitle{メモリ}
+    \framesubtitle{今まで何度か出てきたメモリの解説}
+    \begin{itemize}
+        \item メモリ\\
+        　メモリとはデータを記憶するパーツのことで、読み書きの
+        できるRAM(Random Access Memory)と読み取り専用のROM
+        (Read Only Memory)の2種類がある。一般的にメモリと言った際には
+        RAMを指すことが多く、このスライドで何度か出るメモリも
+        RAMを指している.(より正確に言うと仮想メモリを指している。)
+        \item 仮想メモリ\\
+        　仮想メモリとはＯＳが物理的なメモリを、ソフトウェアなど
+        のために専用の連続したメモリのように扱えるようにしたもの。
+    \end{itemize}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{61}{\beamerbutton{＜}}
+        \space
+        \hyperlink{63}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{アドレス}
+\begin{frame}[t, fragile, label=63]
+    \frametitle{アドレス}
+    \framesubtitle{}
+    \begin{itemize}
+        \item アドレス\\
+            　アドレスとはメモリ上の位置を表す値のことである。\\
+             　私たちがmain関数内でint型の変数xを宣言したとき、
+             CPUは仮想メモリ内のスタック領域に、変数xの値を格納するた
+             めの4[byte]分の領域を確保する。\\
+             　この変数xの値を参照するとき
+             私たちは単に変数名のxを呼ぶだけでよい。ではCPUはこの値を
+             どのようにして参照しているのか。\\
+             　CPUは変数の値を格納しているメモリ領域に名前
+             を付け、その名前に格納されている値を参照している。このとき
+             のメモリ領域の名前をアドレスと呼ぶ。\\
+             　領域の確保をしてアドレスを作るというような説明になった
+             が、実際はアドレスが先に決まっており、そこに領域を確保して
+             いる。アドレスは1バイト毎に割り振られている。
+    \end{itemize}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{62}{\beamerbutton{＜}}
+        \space
+        \hyperlink{64}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile, label=64]
+    \frametitle{図にしてみた}
+    \begin{columns}[t, totalwidth=0.98\linewidth]
+    \begin{column}{.55\linewidth}
+    　例として、\texttt{char a = 'A';}の宣言により、図(メモリ)の青色の
+    領域に値が格納されたとする。私たちはここに格納された値に\texttt
+    {a}を用いてアクセスし、CPUは\texttt{12}を用いてアクセスする。\\
+    　また、\texttt{char b[4];}により、緑色の領域が確保されたとする。このとき\texttt{b[0]
+    }を指すアドレスは1,\texttt{b[3]}を指すアドレスは4となる。
+    \end{column}
+    \begin{column}{.45\linewidth}
+    \vspace{-12pt}
+    \begin{figure}[t]
+    \scalebox{0.6}{
+    \begin{tikzpicture}
+        \foreach \i in {0, 1, ..., 15} {
+            \draw (0, \i*0.5) -- (8, \i*0.5); 
+            \node[left] at (0, \i*0.5 + 0.25) {\texttt{\i}};
+            \draw (0, \i*0.5) -- (0, \i*0.5 + 0.5); 
+            \draw (8, \i*0.5) -- (8, \i*0.5 + 0.5);
+        }
+
+        \draw (0, 8) -- (8, 8);
+
+        \foreach \i in {12} {
+            \fill[blue!20] (0, \i*0.5) rectangle (8, \i*0.5 + 0.5);
+        }
+        \foreach \i in {1, 2, 3, 4 } {
+            \fill[green!20] (0, \i*0.5) rectangle (8, \i*0.5 + 0.5);
+        }
+        \node at (4, 12*0.5 + 0.25) {\texttt{A}};
+        \node at (4, 1*0.5 + 0.25) {\texttt{b[0]}};
+        \node at (4, 2*0.5 + 0.25) {\texttt{b[1]}};
+        \node at (4, 3*0.5 + 0.25) {\texttt{b[2]}};
+        \node at (4, 4*0.5 + 0.25) {\texttt{b[3]}};
+    \end{tikzpicture}
+    }
+    \caption{メモリアドレスとデータ}
+    \vspace{-10pt}
+    \subcaption{左側の数値はアドレスを表す}
+    \vspace{-10pt}
+    \subcaption{セル1つが1[byte]を表す}
+    \end{figure}
+    \end{column}
+    \end{columns}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{63}{\beamerbutton{＜}}
+        \space
+        \hyperlink{65}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\section{ポインタ}
+\begin{frame}[t, label=65]
+    \frametitle{ポインタ}
+    \tableofcontents[sections={2, 11}]
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{64}{\beamerbutton{＜}}
+        \space
+        \hyperlink{66}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{ポインタの基本}
+\begin{frame}[t, fragile, label=66]
+    \frametitle{ポインタの基本}
+    \begin{itemize}
+        \item ポインタ\\
+            変数のアドレスを値として格納できる変数をポインタという。
+        \item ポインタの型\\
+            ポインタには型があり、特定の型の変数を表すアドレスしか格納
+            できない。
+        \item ポインタの宣言\\
+            変数名の前に*(ポインタ宣言子)をつければよい。
+    \end{itemize}
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Declaration]
+        int *pint;
+        double *px, *py;
+        int i, *pi;
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{65}{\beamerbutton{＜}}
+        \space
+        \hyperlink{67}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{ポインタの初期化}
+\begin{frame}[t, fragile, label=67]
+    \frametitle{ポインタの初期化}
+    　ポインタとして宣言した変数にはアドレスを代入する。変数のアドレス
+    は\verb|&|(アドレス演算子)を変数に作用させることで得る。
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Initialization]
+        int n, *np;
+        double d, *dp;
+
+        np = &n;
+        dp = &d;
+    \end{lstlisting}
+    　アドレスの値が気になるときはフォーマット指定子を\texttt{\%p}とし
+    て表示させてみるとよいだろう。(16進数表記で出力される。)
+    \begin{itembox}[l]{tips}
+        \scalebox{2.4}{\textbf{ポインタには変数のアドレス}}\\
+        が格納される。
+    \end{itembox}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{66}{\beamerbutton{＜}}
+        \space
+        \hyperlink{68}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{ポインタによる間接アクセス}
+\begin{frame}[t, fragile, label=68]
+    \frametitle{ポインタによる間接アクセス}
+    　間接演算子*をポインタに作用させた式は、ポインタに格納された
+    アドレスの指す値となる。(同じ記号を使うがポインタ宣言子とは名前が
+    異なる)
+    \begin{lstlisting}[gobble=8, caption=Pointer\space Example]
+        int Var = 10;
+        int *Ptr;
+
+        Ptr = &Var;
+        printf("Var=%d, *Ptr=%d", Var, *Ptr);
+
+        *p = 5;
+        printf("Var=%d, *Ptr=%d", Var, *Ptr);
+    \end{lstlisting}
+    \begin{block}{出力}
+        Var=10, *Ptr=10\\
+        Var=5, *Ptr=5
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{67}{\beamerbutton{＜}}
+        \space
+        \hyperlink{69}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{図解}
+\begin{frame}[c, fragile, label=69]
+    \frametitle{図解}
+    \framesubtitle{左側にコード、右側にその時のメモリ領域の図を示す。}
+    \begin{columns}[c, totalwidth=0.98\linewidth]
+    \begin{column}{.45\linewidth}
+    \begin{lstlisting}[gobble=8]
+        int Var = 10;
+        int *Ptr;
+
+        Ptr = &Var;
+    \end{lstlisting}
+    　右図でわかるように\texttt{*PtrとVarは等価であるため、*Ptrに対
+    して値を代入することはVarに値を代入することと等しい。}
+    \end{column}
+    \begin{column}{.50\linewidth}
+    \begin{figure}
+    \centering
+    %\vspace{-20pt}
+        \begin{tikzpicture}
+              % Draw the variable box
+              \node[draw, rectangle, minimum width=50pt, minimum height=25pt] (ptr) at (30, 40) {\texttt{0xbadc0ffeebad==}\verb|&|\texttt{Var}};
+
+              % Draw the pointer box
+              \node[draw, rectangle, minimum width=50pt, minimum height=25pt, above=50pt of ptr] (var) {\texttt{10}};
+
+              % Draw the memory address inside the pointer box
+              %\node[below=3pt of ptr] {\footnotesize \&a};
+
+              % Draw arrow from pointer to variable
+              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr==Var}}++(0, 75pt)-- (var.east);
+
+              % Labels
+              \node[above=3pt of var] {\texttt{Var}(変数)};
+              \node[above=3pt of ptr] {\texttt{Ptr}(ポインタ)};
+              \node[below=3pt of var] {\texttt{0xbadc0ffeebad}};
+              \node[below=3pt of ptr] {\texttt{0xdeadbeefcafe}};
+        \end{tikzpicture}
+    \caption{ポインタとメモリ領域}
+    \end{figure}
+    \end{column}
+    \end{columns}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{68}{\beamerbutton{＜}}
+        \space
+        \hyperlink{70}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{ポインタのポインタ}
+\begin{frame}[t, fragile, label=70]
+    \frametitle{ポインタのポインタ}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{69}{\beamerbutton{＜}}
+        \space
+        \hyperlink{71}{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 \end{document}

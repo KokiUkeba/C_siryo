@@ -1,0 +1,23 @@
+\frametitle{ポインタによる間接アクセス}
+    　間接演算子*をポインタに作用させた式は、ポインタに格納された
+    アドレスの指す値となる。(同じ記号を使うがポインタ宣言子とは名前が
+    異なる)
+    \begin{lstlisting}[gobble=8, caption=Pointer\space Example]
+        int Var = 10;
+        int *Ptr;
+
+        Ptr = &Var;
+        printf("Var=%d, *Ptr=%d", Var, *Ptr);
+
+        *p = 5;
+        printf("Var=%d, *Ptr=%d", Var, *Ptr);
+    \end{lstlisting}
+    \begin{block}{出力}
+        Var=10, *Ptr=10\\
+        Var=5, *Ptr=5
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{67}{\beamerbutton{＜}}
+        \space
+        \hyperlink{69}{\beamerbutton{＞}}
+    \end{textblock*}

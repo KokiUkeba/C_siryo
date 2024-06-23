@@ -1,23 +1,23 @@
-\frametitle{ビット演算子(その1)}
+\frametitle{論理条件演算子(その2)}
     \begin{itemize}
-        \item \begin{verbatim}ビット毎の論理積:(式1)&(式2)\end{verbatim}
-            \qquad 各桁毎の論理積を返す.
-            \begin{block}{a $= 29 \& 17$}
-                a = 17\qquad $//29=11101_{(2)},17=10001_{(2)}$
+        \item \begin{verbatim}and演算子:(左辺)&&(右辺)\end{verbatim}
+            \qquad 両辺が真の場合1,それ以外の場合0を返す.
+            \begin{block}{int a $= ((2==2)\&\& (3==3))$}
+                a = 1
             \end{block}
-        \item ビット毎の排他的論理和:(式1)＾(式2)\\
-            \qquad 各桁毎の排他的論理和を返す.
-            \begin{block}{a = 29 ＾ 17}
-                a = 12\qquad $//29=11101_{(2)},17=10001_{(2)}$
+        \item \begin{verbatim}or演算子:(左辺)||(右辺)\end{verbatim}
+            \qquad 両辺が偽の場合０,それ以外の場合1を返す.
+            \begin{block}{int a $= ((2==2) \lvert\rvert  (3==3))$}
+                a = 1
             \end{block}
-        \item ビット毎の論理和:(式1)｜(式2)\\
-            \qquad 各桁毎の論理和を返す.
-            \begin{block}{a = 29 ｜ 17}
-                a = 29\qquad $//29=11101_{(2)},17=10001_{(2)}$
+        \item 否定演算子:!(条件式)\\
+            \qquad 条件式の真偽を反転させる.
+            \begin{block}{int a = !(2==2)}
+                    a = 0
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{21}{\beamerbutton{＜}}
+    \hyperlink{19}{\beamerbutton{＜}}
     \space
-    \hyperlink{23}{\beamerbutton{＞}}
+    \hyperlink{21}{\beamerbutton{＞}}
     \end{textblock*}

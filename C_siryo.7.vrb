@@ -1,21 +1,19 @@
-\frametitle{C言語の環境構築}
-    ubuntuで以下を打ち込む
-        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
-            sudo apt update
-            sudo apt install gcc
+\frametitle{wslのインストール}
+    　ここではwsl(windows\space subsystem\space for\space linux)を用いた,
+    ubuntuのインストールの例を示す.
+    (wslについて知っている人と一緒にやることを推奨する)
+    \begin{enumerate}
+        \item Windows\space PowerShellを起動する.
+        \item 以下を打ち込む.
+        \begin{lstlisting}[gobble=9, caption=Windows\space PowerShell]
+            wsl --update
+            wsl --install
         \end{lstlisting}
-    これで完了.下に使い方を示す。
-        \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_howto]
-            gcc hoge.c // g++ hoge.cpp
-            ./a.out
-        \end{lstlisting}
-    　1行目でhoge.cのコンパイルを行っており,コンパイルが完了すると
-    a.outというファイルが生成される(math.hを使うときは末尾に-lm
-    とつけてコンパイルする).2行目で,先ほど生成されたa.outを実行している。
-    ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
-    強制終了できる.
+        \item インストールが終了したら,画面下部のWindowsのタスクバーに"ubuntu"と打ち込み、ubuntuを起動する.
+        \item 初期設定などなど.誰かに聞いたらＯＫ(書きつくすにはスペースが少なすぎた)
+    \end{enumerate}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{6}{\beamerbutton{＜}}
-    \space
-    \hyperlink{8}{\beamerbutton{＞}}
+        \hyperlink{4}{\beamerbutton{＜}}
+        \space
+        \hyperlink{6}{\beamerbutton{＞}}
     \end{textblock*}

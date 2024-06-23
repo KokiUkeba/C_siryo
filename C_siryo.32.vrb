@@ -1,6 +1,25 @@
-\frametitle{演習問題}
+\frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=4, caption=pra\_while.c, label=pra-while]
+    #include<stdio.h>
+
+    int main(void)
+    {
+        double x = 199;
+
+        while (x > 1) {
+            x /= 9;
+        }
+
+        printf("%f", x);
+
+        return 0;
+    }
+    \end{lstlisting}
+    \begin{block}{出力}
+    0.272977
+    \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{31}{\beamerbutton{＜}}
+    \hyperlink{29}{\beamerbutton{＜}}
     \space
-    \hyperlink{33}{\beamerbutton{＞}}
+    \hyperlink{31}{\beamerbutton{＞}}
     \end{textblock*}
