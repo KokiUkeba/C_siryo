@@ -8,8 +8,8 @@
 
         Ptr = &Var;
     \end{lstlisting}
-    　右図でわかるように\texttt{*PtrとVarは等価であるため、*Ptrに対
-    して値を代入することはVarに値を代入することと等しい。}
+    　(右図でわかるように\texttt{*PtrとVarは等価であるため、*Ptrに対
+    して値を代入することはVarに値を代入することと等しい。)}
     \end{column}
     \begin{column}{.50\linewidth}
     \begin{figure}
@@ -22,11 +22,8 @@
               % Draw the pointer box
               \node[draw, rectangle, minimum width=50pt, minimum height=25pt, above=50pt of ptr] (var) {\texttt{10}};
 
-              % Draw the memory address inside the pointer box
-              %\node[below=3pt of ptr] {\footnotesize \&a};
-
               % Draw arrow from pointer to variable
-              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr==Var}}++(0, 75pt)-- (var.east);
+              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr(==Var)}}++(0, 75pt)-- (var.east);
 
               % Labels
               \node[above=3pt of var] {\texttt{Var}(変数)};

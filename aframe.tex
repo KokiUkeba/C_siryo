@@ -1,0 +1,40 @@
+\subsection{ポインタと配列(その1)}
+\begin{frame}[t, fragile, label=71]
+    \frametitle{ポインタと配列}
+    　配列のポインタを定義することもできる。配列の説明をする際に,
+    「メモリ上に同じ型の配列要素が連続して並んだ領域」と書いたが、本当に
+    連続しているのか確認してみる。
+    \begin{lstlisting}[gobble=8]
+        int a[5];
+        
+        for (int i = 0; i < 5; i++) {
+            printf("&a[%d]=%p\n", i, &a[i]);
+        }
+    \end{lstlisting}
+    \begin{block}{出力}
+        \verb|&|a[0]=0x7ffeaeae1010\\
+        \verb|&|a[1]=0x7ffeaeae1014\\
+        \verb|&|a[2]=0x7ffeaeae1018\\
+        \verb|&|a[3]=0x7ffeaeae101c\\
+        \verb|&|a[4]=0x7ffeaeae1020
+    \end{block}
+    \begin{textblock*}{0.5\linewidth}(150pt, 190pt)
+        ←int型配列なので4[byte]ずつ増加している。
+    \end{textblock*}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{70}{\beamerbutton{＜}}
+        \space
+        \hyperlink{72}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{ポインタと配列(その2)}
+\begin{frame}[t, fragile, label=72]
+    \frametitle{ポインタと配列(その2)}
+    　実は
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{71}{\beamerbutton{＜}}
+        \space
+        \hyperlink{70}{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}

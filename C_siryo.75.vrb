@@ -1,0 +1,11 @@
+\frametitle{ポインタと関数}
+    　ポインタを引数に取る関数を定義することができる。これにより、
+    関数内で配列の値を参照できるようになる。(Ｃ言語では配列をそのまま引数
+    とすることはできない)\\
+    　また、C言語の関数は返り値を1つしか持てないが、ポインタを使えば複数
+    の値を返せる。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{71}{\beamerbutton{＜}}
+        \space
+        \hyperlink{73}{\beamerbutton{＞}}
+    \end{textblock*}

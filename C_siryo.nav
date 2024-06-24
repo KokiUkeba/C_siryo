@@ -242,8 +242,16 @@
 \headcommand {\beamer@subsectionentry {0}{12}{5}{73}{ポインタのポインタ}}
 \headcommand {\slideentry {12}{5}{1}{73/73}{ポインタのポインタ}{0}}
 \headcommand {\beamer@framepages {73}{73}}
-\headcommand {\beamer@partpages {1}{73}}
 \headcommand {\beamer@subsectionpages {73}{73}}
-\headcommand {\beamer@sectionpages {68}{73}}
-\headcommand {\beamer@documentpages {73}}
-\headcommand {\gdef \inserttotalframenumber {73}}
+\headcommand {\beamer@subsectionentry {0}{12}{6}{74}{ポインタと配列}}
+\headcommand {\slideentry {12}{6}{1}{74/74}{ポインタと配列}{0}}
+\headcommand {\beamer@framepages {74}{74}}
+\headcommand {\beamer@subsectionpages {74}{74}}
+\headcommand {\beamer@subsectionentry {0}{12}{7}{75}{ポインタと関数}}
+\headcommand {\slideentry {12}{7}{1}{75/75}{ポインタと関数}{0}}
+\headcommand {\beamer@framepages {75}{75}}
+\headcommand {\beamer@partpages {1}{75}}
+\headcommand {\beamer@subsectionpages {75}{75}}
+\headcommand {\beamer@sectionpages {68}{75}}
+\headcommand {\beamer@documentpages {75}}
+\headcommand {\gdef \inserttotalframenumber {75}}

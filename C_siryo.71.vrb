@@ -9,7 +9,7 @@
         Ptr = &Var;
         printf("Var=%d, *Ptr=%d", Var, *Ptr);
 
-        *p = 5;
+        *Ptr = 5;
         printf("Var=%d, *Ptr=%d", Var, *Ptr);
     \end{lstlisting}
     \begin{block}{出力}

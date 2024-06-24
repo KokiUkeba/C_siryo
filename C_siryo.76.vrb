@@ -1,0 +1,14 @@
+\frametitle{サンプルコード}
+    \begin{lstlistng}[gobble=8, caption=pra\_pointer\_1.c]
+        #include<stdio.h>
+
+        int main(void)
+        {
+
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{72}{\beamerbutton{＜}}
+        \space
+        \hyperlink{74}{\beamerbutton{＞}}
+    \end{textblock*}

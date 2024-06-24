@@ -1,0 +1,31 @@
+\frametitle{ポインタと配列}
+    　配列名は配列の最初の要素を表すアドレスとなっている。
+    つまり,\texttt{int a[10];}により配列を宣言した時、\texttt{a}と
+    \verb|&|\texttt{a[0]は等価となる。このとき、aで初期化した
+    ポインタに整数値nを足したポインタptr+nの値は、a[n]の
+    アドレスと等価となる。}
+    \begin{lstlisting}[gobble=8, caption=Exercise]
+        int v[1000];
+        int *ptr;
+
+        ptr = v; // ptr = &v[0];
+
+        for (int i = 0; i < 1000; i++) {
+            printf("--------------------\n");
+            printf("&v[%d]=\t%p\n", i, &v[i]);
+            printf("ptr=\t\t%p\n", ptr);
+            printf("v[%d]=\t\t%d\n", i, v[i]);
+            printf("*ptr=\t\t%d\n", *ptr);
+            ptr++;
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(255pt, 130pt)
+        \begin{itembox}[l]{出力の仕方}
+            　今回のように数千行を出力するときは、\texttt{./a.out > output}などとして実行し、ファイルに実行結果を出力するのが良い。
+        \end{itembox}
+    \end{textblock*}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlink{70}{\beamerbutton{＜}}
+        \space
+        \hyperlink{72}{\beamerbutton{＞}}
+    \end{textblock*}
