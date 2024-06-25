@@ -1,6 +1,21 @@
-\frametitle{演習問題}
+\frametitle{サンプルコード}
+    \begin{block}{出力}
+        c[0]=4.000000\\
+        c[1]=10.000000\\
+        c[2]=10.000000\\
+    \end{block}
+    \begin{itembox}[l]{tips}
+        \begin{itemize}
+            \item sizeof演算子\\
+                 変数に対して作用させることで、変数の占める領域のサイズ
+                 がバイト単位で得られる。配列名に対して作用させることで
+                 、その配列が占める領域のサイズが得られる。\\
+                 例:\space \texttt{a = sizeof(int);}\\
+                 aにはint型のメモリサイズである4が代入される。
+        \end{itemize}
+    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{61}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{63}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

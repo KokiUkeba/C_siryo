@@ -1,0 +1,18 @@
+\frametitle{実行例}
+    \textbf{～ポインタによる間接アクセス～}\\
+    *pvは,pvに格納されている0xcafecafecafeの指すメモリ領域
+    に格納されている3にアクセスする.
+    \begin{block}{printf("*pv=\%d", *pv); //ポインタによる間接アクセス}
+        *pv=3 //vの値
+    \end{block}
+    \begin{block}{v = 9}
+        v=9, *pv=9
+    \end{block}
+    \begin{block}{*pv = 2}
+        v=2, *pv=2
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}

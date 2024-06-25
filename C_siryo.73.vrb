@@ -1,8 +1,37 @@
-\frametitle{ポインタのポインタ}
-    \framesubtitle{みかん}
-    %todo
+\frametitle{図解}
+    \framesubtitle{左側にコード、右側にその時のメモリ領域の図を示す。}
+    \begin{columns}[c, totalwidth=0.98\linewidth]
+    \begin{column}{.40\linewidth}
+    \begin{lstlisting}[gobble=8]
+        int Var = 10;
+        int *Ptr;
+
+        Ptr = &Var;
+    \end{lstlisting}
+    　(右図でわかるように\texttt{*PtrとVarは等価であるため、*Ptrに対
+    して値を代入することはVarに値を代入することと等しい。)}
+    \end{column}
+    \begin{column}{.55\linewidth}
+    \begin{figure}
+    \centering
+        \begin{tikzpicture}
+              \node[draw, rectangle, minimum width=50pt, minimum height=25pt] (ptr) at (30, 40) {\texttt{0xbadc0ffeebad==}(\verb|&|\texttt{Var})};
+
+              \node[draw, rectangle, minimum width=50pt, minimum height=25pt, above=50pt of ptr] (var) {\texttt{10}};
+
+              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr==Var}}++(0, 75pt)-- (var.east);
+
+              \node[above=3pt of var] {\texttt{Var}(変数)};
+              \node[above=3pt of ptr] {\texttt{Ptr}(ポインタ)};
+              \node[below=3pt of var] {\texttt{0xbadc0ffeebad}};
+              \node[below=3pt of ptr] {\texttt{0xdeadbeefcafe}};
+        \end{tikzpicture}
+    \caption{ポインタとメモリ領域}
+    \end{figure}
+    \end{column}
+    \end{columns}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{69}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{71}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

@@ -13,7 +13,7 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{39}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{41}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

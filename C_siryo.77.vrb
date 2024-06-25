@@ -1,0 +1,20 @@
+\frametitle{実行例}
+    \begin{block}{int v, *pv; //int型変数、int型ポインタの宣言}
+        v = 3; //変数の初期化\\
+        pv = \verb|&|v; //ポインタの初期化(ポインタにはアドレスを代入する)
+    \end{block}
+    \begin{block}{%\begin{tabular}{l}
+            printf("v=\%d, \&v=\%p\textbackslash n", v, \&v);\\
+            printf("pv=\%p, \&pv=\%p\textbackslash n", pv, \&pv);
+        %\end{tabular}
+        }
+        v=3, \verb|&|v=0xcafecafecafe\\
+        pv=0xcafecafecafe, \verb|&|pv=0xcafebeefcafe
+    \end{block}
+    変数名v,アドレス0xcafecafecafeには３が格納されている。\\
+    変数名pv,アドレス0xcafebeefcafeには0xcafecafecafeが格納されている。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}

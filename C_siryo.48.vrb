@@ -13,7 +13,7 @@
         見やすさが損なわれるため,プロトタイプ宣言→main関数→関数の定義
         の順でコードを書くことをお勧めする.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{45}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{47}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

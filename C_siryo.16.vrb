@@ -23,7 +23,7 @@
         \end{tabular}
     \end{table}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{13}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{15}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

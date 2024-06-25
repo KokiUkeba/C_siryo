@@ -27,7 +27,7 @@
     他にもいろいろあるので,興味があれば調べるのが良い.
         (\texttt{vimtutor}など)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{7}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{9}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

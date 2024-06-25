@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  24 JUN 2024 17:00
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  26 JUN 2024 02:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -707,26 +707,31 @@ y)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamercolorthemedolphin.st
 y)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.
-sty)) (/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/ascmac.sty
+sty))
+(/usr/local/texlive/2024/texmf-dist/tex/latex/bxdpx-beamer/bxdpx-beamer.sty
+Package: bxdpx-beamer 2016/08/06 v0.3
+\bxqbd@ghost=\box94
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
 \@savetbaselineshift=\dimen310
 \@saveybaselineshift=\dimen311
-\scb@x=\box94
-\scscb@x=\box95
+\scb@x=\box95
+\scscb@x=\box96
 \@bw=\dimen312
-\@nbox=\box96
-\@nbody=\box97
+\@nbox=\box97
+\@nbody=\box98
 \@scw=\dimen313
-\ascmac@hoboxa=\box98
-\ascmac@hoboxb=\box99
+\ascmac@hoboxa=\box99
+\ascmac@hoboxb=\box100
 \@itemh=\dimen314
 \@iboxpos=\toks47
-\@iboxstr=\box100
-\@bwsp=\box101
-\@@bwsp=\box102
+\@iboxstr=\box101
+\@bwsp=\box102
+\@@bwsp=\box103
 \@bcal=\count340
 \shaderule=\dimen315
 ))
@@ -758,8 +763,44 @@ Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 \l_MT_below_intertext_sep=\dimen322
 \l_MT_above_shortintertext_sep=\dimen323
 \l_MT_below_shortintertext_sep=\dimen324
-\xmathstrut@box=\box103
+\xmathstrut@box=\box104
 \xmathstrut@dim=\dimen325
+)
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
 )
 (/usr/local/texlive/2024/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 Package: pxjahyper 2023/03/01 v1.3
@@ -777,7 +818,7 @@ Package pxjahyper Info: The setup for hyperref 'unicode' is applied.
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count345
-\lst@gtempboxa=\box104
+\lst@gtempboxa=\box105
 \lst@token=\toks48
 \lst@length=\count346
 \lst@currlwidth=\dimen326
@@ -796,7 +837,7 @@ File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
 File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
 \c@lstnumber=\count351
 \lst@skipnumbers=\count352
-\lst@framebox=\box105
+\lst@framebox=\box106
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2024/03/11 1.10a listings configuration
@@ -844,9 +885,9 @@ Package caption Info: listings package is loaded.
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count360
 \float@exts=\toks49
-\float@box=\box106
+\float@box=\box107
 \@float@everytoks=\toks50
-\@floatcapt=\box107
+\@floatcapt=\box108
 )
 (/usr/local/texlive/2024/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
@@ -862,7 +903,7 @@ Package: pgf 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\pgfnodeparttextbox=\box108
+\pgfnodeparttextbox=\box109
 )
 (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -904,10 +945,10 @@ File: pgflibraryplothandlers.code.tex 2023-01-15 v3.1.10 (3.1.10)
 \tikz@lastmovetoy=\dimen349
 \tikzleveldistance=\dimen350
 \tikzsiblingdistance=\dimen351
-\tikz@figbox=\box109
-\tikz@figbox@bg=\box110
-\tikz@tempbox=\box111
-\tikz@tempbox@bg=\box112
+\tikz@figbox=\box110
+\tikz@figbox@bg=\box111
+\tikz@tempbox=\box112
+\tikz@tempbox@bg=\box113
 \tikztreelevel=\count364
 \tikznumberofchildren=\count365
 \tikznumberofcurrentchild=\count366
@@ -933,8 +974,8 @@ File: tikzlibrarypositioning.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (/usr/local/texlive/2024/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2022/07/23 v1.10.1
 Package textpos Info: choosing support for LaTeX3 on input line 60.
-\TP@textbox=\box113
-\TP@holdbox=\box114
+\TP@textbox=\box114
+\TP@holdbox=\box115
 \TPHorizModule=\dimen352
 \TPVertModule=\dimen353
 \TP@margin=\dimen354
@@ -980,22 +1021,22 @@ Package: layout 2023-08-20 v1.2e Show layout parameters
 \PositionY=\count401
 \ArrowLength=\count402
 )
-Package hyperref Info: Option `setpagesize' set `false' on input line 35.
+Package hyperref Info: Option `setpagesize' set `false' on input line 37.
 
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 35.
+(hyperref)                setting the option has no effect on input line 37.
 
 
 Package hyperref Warning: Unknown document division name (tocdepth) on input li
-ne 35.
+ne 37.
 
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 35.
-Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 37.
+Package hyperref Info: Option `colorlinks' set `true' on input line 37.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 File: l3backend-dvipdfmx.def 2024-04-11 L3 backend support: dvipdfmx
 \g__graphics_track_int=\count403
-\l__pdf_internal_box=\box115
+\l__pdf_internal_box=\box116
 \g__pdf_backend_annotation_int=\count404
 \g__pdf_backend_link_int=\count405
 ) (./C_siryo.aux
@@ -1005,37 +1046,31 @@ LaTeX Warning: Label `if_howto' multiply defined.
 
 LaTeX Warning: Label `if_howto' multiply defined.
 
-
-LaTeX Warning: Label `61<1>' multiply defined.
-
-
-LaTeX Warning: Label `61' multiply defined.
-
 )
 \openout1 = `C_siryo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
-LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for JY2/mc/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 *geometry* detected driver: dvipdfm
 *geometry* verbose mode - [ preamble ] result:
@@ -1070,53 +1105,53 @@ LaTeX Font Info:    ... okay on input line 66.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 66.
+Package hyperref Info: Link coloring ON on input line 71.
 (./C_siryo.out) (./C_siryo.out)
 \@outlinefile=\write5
 \openout5 = `C_siryo.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 66.
+(Font)                  OT1/ztmcm/m/n --> OT1/cmss/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
-\symnumbers=\mathgroup6
-\sympureletters=\mathgroup7
+(Font)                  OT1/ztmcm/m/n --> OT1/cmss/b/n on input line 71.
+\symnumbers=\mathgroup8
+\sympureletters=\mathgroup9
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/ptm/m/n on input line 71.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/ptm/bx/n --> OT1/cmss/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 66.
+(Font)                  OT1/ptm/bx/n --> OT1/cmss/b/n on input line 71.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 66.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 71.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 66.
+(Font)                  OT1/ptm/m/it --> OT1/cmss/m/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 66.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 66.
+(Font)                  OT1/ptm/m/it --> OT1/cmss/m/it on input line 71.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 71.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 66.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 66.
+(Font)                  OT1/cmss/b/n --> OT1/ptm/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 66.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 66.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 71.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 66.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 71.
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/translator/translator-basic-dicti
 onary-English.dict
@@ -1148,25 +1183,30 @@ Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (./C_siryo.nav)
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 66.
+(Font)              scaled to size 5.77332pt on input line 71.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 5.77332pt on input line 66.
+(Font)              scaled to size 5.77332pt on input line 71.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 70.
+(Font)              scaled to size 13.85594pt on input line 75.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.85594pt on input line 70.
+(Font)              scaled to size 13.85594pt on input line 75.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 70.
+(Font)              scaled to size 7.69775pt on input line 75.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 7.69775pt on input line 70.
+(Font)              scaled to size 7.69775pt on input line 75.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 3.84888pt on input line 77.
+(Font)              scaled to size 3.84888pt on input line 82.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 3.84888pt on input line 77.
- [2
+(Font)              scaled to size 3.84888pt on input line 82.
+
+
+LaTeX Font Warning: Font shape `OT1/cmtt/m/n' in size <4> not available
+(Font)              size <5> substituted on input line 82.
+
+[2
 
 ] (./C_siryo.toc) [3
 
@@ -1177,17 +1217,20 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 
 
 ]
-(./C_siryo.toc)
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb (./C_siryo.toc))
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 93.
+(Font)              scaled to size 8.65997pt on input line 98.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.65997pt on input line 93.
+(Font)              scaled to size 8.65997pt on input line 98.
  [6
 
 ]
-\openout4 = `C_siryo.7.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.7.vrb
+
+(./C_siryo.vrb
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 9.6222pt on input line 8.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
@@ -1195,32 +1238,51 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 ) [7
 
 ]
-\openout4 = `C_siryo.8.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.8.vrb
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+ (./C_siryo.vrb
+LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
+ 13.
 
-
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
+ 13.
 
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
+ 13.
 
-(/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)) [8
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
+3.
+
+(/usr/local/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+) [8
 
 ]
-\openout4 = `C_siryo.9.vrb'.
+\openout4 = `C_siryo.vrb'.
 
 
-(./C_siryo.9.vrb) [9
+(./C_siryo.vrb) [9
 
 ]
-\openout4 = `C_siryo.10.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.10.vrb
+ (./C_siryo.vrb
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JT2/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
@@ -1229,194 +1291,220 @@ LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10.95> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 9.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 10.53629pt on input line 9.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 9.
 ) [10
 
 ]
-\openout4 = `C_siryo.11.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.11.vrb) [11
+ (./C_siryo.vrb) [11
 
 ]
-\openout4 = `C_siryo.12.vrb'.
+\openout4 = `C_siryo.vrb'.
 
-
-(./C_siryo.12.vrb
+ (./C_siryo.vrb
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 13.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 (Font)              scaled to size 11.54663pt on input line 13.
-) [12
+)
+[12
 
 ]
-\openout4 = `C_siryo.13.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.13.vrb) [13
-
-] (./C_siryo.toc) [14
+ (./C_siryo.vrb) [13
 
 ]
-\openout4 = `C_siryo.15.vrb'.
+\openout4 = `C_siryo.vrb'.
 
-
-(./C_siryo.15.vrb) [15
-
-]
-\openout4 = `C_siryo.16.vrb'.
-
- (./C_siryo.16.vrb) [16
+ (./C_siryo.vrb (./C_siryo.toc)) [14
 
 ]
-\openout4 = `C_siryo.17.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.17.vrb) [17
+ (./C_siryo.vrb)
+[15
 
 ]
-[18
+\openout4 = `C_siryo.vrb'.
 
-] [19
+ (./C_siryo.vrb) [16
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [17
+
+] [18
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 429.
+ [19
 
 ] [20
 
 ]
-\openout4 = `C_siryo.21.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.21.vrb) [21
-
-]
-\openout4 = `C_siryo.22.vrb'.
-
- (./C_siryo.22.vrb) [22
+ (./C_siryo.vrb)
+[21
 
 ]
-\openout4 = `C_siryo.23.vrb'.
+\openout4 = `C_siryo.vrb'.
 
-
-(./C_siryo.23.vrb)
-Overfull \vbox (0.29352pt too high) detected at line 523
- []
-
-[23
+ (./C_siryo.vrb) [22
 
 ]
-\openout4 = `C_siryo.24.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.24.vrb) [24
-
-]
-\openout4 = `C_siryo.25.vrb'.
-
- (./C_siryo.25.vrb) [25
+ (./C_siryo.vrb) [23
 
 ]
-\openout4 = `C_siryo.26.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.26.vrb)
-[26
-
-] (./C_siryo.toc) [27
+ (./C_siryo.vrb) [24
 
 ]
-\openout4 = `C_siryo.28.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.28.vrb)
-Overfull \hbox (15.8313pt too wide) in paragraph at lines 8--635
+
+(./C_siryo.vrb) [25
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [26
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb (./C_siryo.toc))
+[27
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb)
+Overfull \hbox (51.05441pt too wide) in paragraph at lines 8--639
 [][][]  
  []
 
 [28
 
 ]
-\openout4 = `C_siryo.29.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.29.vrb) [29
-
-]
-\openout4 = `C_siryo.30.vrb'.
-
- (./C_siryo.30.vrb) [30
+ (./C_siryo.vrb) [29
 
 ]
-\openout4 = `C_siryo.31.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.31.vrb
-Overfull \hbox (5.54611pt too wide) in paragraph at lines 10--18
+ (./C_siryo.vrb) [30
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb
+Overfull \hbox (29.0264pt too wide) in paragraph at lines 10--18
 [][][]  
  []
 
 ) [31
 
 ]
-\openout4 = `C_siryo.32.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.32.vrb) [32
-
-]
-\openout4 = `C_siryo.33.vrb'.
-
- (./C_siryo.33.vrb) [33
+ (./C_siryo.vrb) [32
 
 ]
-\openout4 = `C_siryo.34.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.34.vrb)
-[34
+ (./C_siryo.vrb) [33
 
 ]
-\openout4 = `C_siryo.35.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.35.vrb)
-Overfull \vbox (1.00647pt too high) detected at line 799
+ (./C_siryo.vrb) [34
+
+]
+\openout4 = `C_siryo.vrb'.
+
+
+(./C_siryo.vrb)
+Overfull \vbox (1.69534pt too high) detected at line 802
  []
 
 [35
 
 ]
-\openout4 = `C_siryo.36.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.36.vrb) [36
-
-] [37
+ (./C_siryo.vrb) [36
 
 ]
-\openout4 = `C_siryo.38.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.38.vrb) [38
-
-]
-\openout4 = `C_siryo.39.vrb'.
-
- (./C_siryo.39.vrb)
-[39
+ (./C_siryo.vrb) [37
 
 ]
-\openout4 = `C_siryo.40.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.40.vrb) [40
-
-]
-\openout4 = `C_siryo.41.vrb'.
-
- (./C_siryo.41.vrb) [41
+ (./C_siryo.vrb) [38
 
 ]
-\openout4 = `C_siryo.42.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.42.vrb)
-[42
+
+(./C_siryo.vrb
+Overfull \hbox (6.42525pt too wide) in paragraph at lines 5--12
+ [][][] 
+ []
+
+) [39
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb)
+Overfull \vbox (5.3131pt too high) detected at line 930
+ []
+
+[40
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [41
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [42
 
 ] [43
 
 ]
-\openout4 = `C_siryo.44.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.44.vrb) [44
-
-] (./C_siryo.toc) [45
+ (./C_siryo.vrb) [44
 
 ]
-\openout4 = `C_siryo.46.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.46.vrb
+
+(./C_siryo.vrb (./C_siryo.toc)) [45
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb
 Overfull \hbox (22.90408pt too wide) in paragraph at lines 8--36
  [][][] 
  []
@@ -1428,111 +1516,146 @@ File: ts1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )) [46
 
 ]
-\openout4 = `C_siryo.47.vrb'.
+\openout4 = `C_siryo.vrb'.
 
 
-(./C_siryo.47.vrb) [47
-
-]
-\openout4 = `C_siryo.48.vrb'.
-
- (./C_siryo.48.vrb) [48
+(./C_siryo.vrb) [47
 
 ]
-\openout4 = `C_siryo.49.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.49.vrb) [49
-
-]
-\openout4 = `C_siryo.50.vrb'.
-
-
-(./C_siryo.50.vrb) [50
+ (./C_siryo.vrb) [48
 
 ]
-\openout4 = `C_siryo.51.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.51.vrb) [51
-
-]
-\openout4 = `C_siryo.52.vrb'.
-
- (./C_siryo.52.vrb) [52
+ (./C_siryo.vrb) [49
 
 ]
-(./C_siryo.toc) [53
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb)
+[50
 
 ]
-\openout4 = `C_siryo.54.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.54.vrb) [54
-
-] [55
+ (./C_siryo.vrb) [51
 
 ]
-Overfull \hbox (2.71068pt too wide) in paragraph at lines 1374--1374
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [52
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb (./C_siryo.toc))
+[53
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [54
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [55
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb
+Overfull \hbox (7.26088pt too wide) in paragraph at lines 34--35
  [] 
+ []
+
+)
+Overfull \vbox (4.952pt too high) detected at line 1377
  []
 
 [56
 
 ]
-\openout4 = `C_siryo.57.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.57.vrb) [57
-
-] (./C_siryo.toc) [58
+ (./C_siryo.vrb) [57
 
 ]
-\openout4 = `C_siryo.59.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.59.vrb) [59
-
-]
-\openout4 = `C_siryo.60.vrb'.
-
-
-(./C_siryo.60.vrb) [60
+ (./C_siryo.vrb (./C_siryo.toc)) [58
 
 ]
-\openout4 = `C_siryo.61.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.61.vrb)
-Overfull \vbox (0.20326pt too high) detected at line 1507
+ (./C_siryo.vrb)
+[59
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [60
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb)
+Overfull \vbox (0.74007pt too high) detected at line 1510
  []
 
 [61
 
 ]
-\openout4 = `C_siryo.62.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.62.vrb) [62
+ (./C_siryo.vrb
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
+5.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 5.
 
-]
-\openout4 = `C_siryo.63.vrb'.
 
- (./C_siryo.63.vrb) [63
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 5.
 
-]
-\openout4 = `C_siryo.64.vrb'.
-
- (./C_siryo.64.vrb)
-[64
-
-]
-\openout4 = `C_siryo.65.vrb'.
-
- (./C_siryo.65.vrb) [65
+) [62
 
 ]
-\openout4 = `C_siryo.66.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.66.vrb) [66
+ (./C_siryo.vrb) [63
 
 ]
-\openout4 = `C_siryo.67.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.67.vrb
+ (./C_siryo.vrb) [64
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [65
+
+]
+\openout4 = `C_siryo.vrb'.
+
+
+(./C_siryo.vrb) [66
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [67
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb
+Overfull \hbox (1.1782pt too wide) in paragraph at lines 36--37
+ [] 
+ []
+
 
 Package caption Warning: \setcaptionsubtype
 (caption)                outside box or environment on input line 39.
@@ -1553,58 +1676,84 @@ Overfull \hbox (6.84737pt too wide) detected at line 44
 [][][][][][][][][][][] [][][][][][][]
  []
 
-) [67
+) [68
 
-] (./C_siryo.toc) [68
-
-]
-\openout4 = `C_siryo.69.vrb'.
-
- (./C_siryo.69.vrb) [69
+] (./C_siryo.toc) [69
 
 ]
-\openout4 = `C_siryo.70.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.70.vrb
+ (./C_siryo.vrb) [70
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb
 Overfull \hbox (6.43596pt too wide) in paragraph at lines 14--16
 [][] 
  []
 
-) [70
+) [71
 
 ]
-\openout4 = `C_siryo.71.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.71.vrb) [71
+ (./C_siryo.vrb) [72
 
 ]
-\openout4 = `C_siryo.72.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.72.vrb
-Overfull \hbox (30.26012pt too wide) in paragraph at lines 33--34
+ (./C_siryo.vrb
+Overfull \hbox (13.87404pt too wide) in paragraph at lines 28--29
  [] 
  []
 
-) [72
+) [73
 
 ]
-\openout4 = `C_siryo.73.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.73.vrb) [73
+ (./C_siryo.vrb) [74
 
 ]
-\openout4 = `C_siryo.74.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.74.vrb)
-Overfull \vbox (2.33891pt too high) detected at line 1851
+ (./C_siryo.vrb)
+Overfull \vbox (2.87572pt too high) detected at line 1874
  []
 
-[74
+[75
 
 ]
-\openout4 = `C_siryo.75.vrb'.
+\openout4 = `C_siryo.vrb'.
 
- (./C_siryo.75.vrb) [75
+ (./C_siryo.vrb) [76
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [77
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [78
+
+]
+\openout4 = `C_siryo.vrb'.
+
+
+(./C_siryo.vrb) [79
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [80
+
+]
+\openout4 = `C_siryo.vrb'.
+
+ (./C_siryo.vrb) [81
 
 ]
 \tf@nav=\write6
@@ -1624,18 +1773,25 @@ L3 programming layer <2024-04-11>
  ***********
 
 
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.0pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `C_siryo.out' has not changed.
-(rerunfilecheck)             Checksum: 7F299CF844E8E94A10EB6C9C3BD4C8C7;4485.
+(rerunfilecheck)             Checksum: 82C4A3D009B6DE1468367DD26E5CC54C;4934.
  ) 
 Here is how much of TeX's memory you used:
- 30555 strings out of 476156
- 594555 string characters out of 5792954
- 2029596 words of memory out of 5000000
- 52137 multiletter control sequences out of 15000+600000
- 604379 words of font info for 110 fonts, out of 8000000 for 9000
+ 29838 strings out of 476156
+ 582420 string characters out of 5792954
+ 2030596 words of memory out of 5000000
+ 51434 multiletter control sequences out of 15000+600000
+ 619790 words of font info for 139 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 101i,14n,107p,393b,1540s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 101i,14n,107p,393b,1542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C_siryo.dvi (75 pages, 615264 bytes).
+Output written on C_siryo.dvi (81 pages, 705800 bytes).

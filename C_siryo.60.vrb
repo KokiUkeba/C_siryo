@@ -27,7 +27,7 @@
     インデックスの値が0～(size-1)にあるかどうかには十分気を付けること。
     (配列外の値にアクセスできるが、エラーは出ない)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{57}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{59}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

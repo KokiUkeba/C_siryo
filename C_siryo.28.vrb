@@ -28,7 +28,7 @@
         \hline
     \end{tabular}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{25}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{27}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

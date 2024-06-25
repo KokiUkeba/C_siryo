@@ -19,7 +19,7 @@
     0.272977
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{29}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{31}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

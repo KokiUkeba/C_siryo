@@ -21,7 +21,7 @@
     goto文は便利なように見えるが,何重ものネストから
     一気に抜け出す場合にのみ用いるべきである.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{36}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{38}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

@@ -38,7 +38,7 @@
     　右の書き方であれば,自作関数をいくつ定義してもmain関数が
     必ず一番初めに定義されるので,見やすくなる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{46}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{48}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

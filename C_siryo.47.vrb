@@ -24,7 +24,7 @@
     　これらはプロトタイプ宣言と呼ばれ,関数を呼び出す前に
     記述しなければならない.(main文の上に書く)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{44}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{46}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

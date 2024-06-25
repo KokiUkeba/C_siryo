@@ -1,7 +1,6 @@
 \frametitle{if\space else\space if文}
     if文を連続して用いる際は次のように記述する.
     \begin{lstlisting}[gobble=3, caption=Syntax\space of\space if-else-if, label=if_howto]
-    // any if-else ladder starts with an if statement only
     if (condition) {
 
     } else if (codition) {
@@ -13,7 +12,7 @@
     }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{35}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{37}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

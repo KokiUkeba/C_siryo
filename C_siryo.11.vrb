@@ -3,7 +3,7 @@
     C言語は他の多くのプログラミング言語の基礎となっており,その
     シンプルさと効率性が特徴である.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{8}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{10}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

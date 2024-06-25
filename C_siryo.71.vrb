@@ -1,23 +1,21 @@
-\frametitle{ポインタによる間接アクセス}
-    　間接演算子*をポインタに作用させた式は、ポインタに格納された
-    アドレスの指す値となる。(同じ記号を使うがポインタ宣言子とは名前が
-    異なる)
-    \begin{lstlisting}[gobble=8, caption=Pointer\space Example]
-        int Var = 10;
-        int *Ptr;
+\frametitle{ポインタの初期化}
+    　ポインタとして宣言した変数にはアドレスを代入する。変数のアドレス
+    は\verb|&|(アドレス演算子)を変数に作用させることで得る。
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Initialization]
+        int n, *np;
+        double d, *dp;
 
-        Ptr = &Var;
-        printf("Var=%d, *Ptr=%d", Var, *Ptr);
-
-        *Ptr = 5;
-        printf("Var=%d, *Ptr=%d", Var, *Ptr);
+        np = &n;
+        dp = &d;
     \end{lstlisting}
-    \begin{block}{出力}
-        Var=10, *Ptr=10\\
-        Var=5, *Ptr=5
-    \end{block}
+    　アドレスの値が気になるときはフォーマット指定子を\texttt{\%p}とし
+    て表示させてみるとよいだろう。(16進数表記で出力される。)
+    \begin{itembox}[l]{tips}
+        \scalebox{2.4}{\textbf{ポインタには変数のアドレス}}\\
+        が格納される。
+    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{67}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{69}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

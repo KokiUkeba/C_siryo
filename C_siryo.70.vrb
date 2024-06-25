@@ -1,21 +1,20 @@
-\frametitle{ポインタの初期化}
-    　ポインタとして宣言した変数にはアドレスを代入する。変数のアドレス
-    は\verb|&|(アドレス演算子)を変数に作用させることで得る。
-    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Initialization]
-        int n, *np;
-        double d, *dp;
-
-        np = &n;
-        dp = &d;
+\frametitle{ポインタの基本}
+    \begin{itemize}
+        \item ポインタ\\
+            変数のアドレスを値として格納できる変数をポインタという。
+        \item ポインタの型\\
+            ポインタには型があり、特定の型の変数を表すアドレスしか格納
+            できない。
+        \item ポインタの宣言\\
+            変数名の前に*(ポインタ宣言子)をつければよい。
+    \end{itemize}
+    \begin{lstlisting}[gobble=8, caption=Example\space of\space Pointer\space Declaration]
+        int *pint;
+        double *px, *py;
+        int i, *pi;
     \end{lstlisting}
-    　アドレスの値が気になるときはフォーマット指定子を\texttt{\%p}とし
-    て表示させてみるとよいだろう。(16進数表記で出力される。)
-    \begin{itembox}[l]{tips}
-        \scalebox{2.4}{\textbf{ポインタには変数のアドレス}}\\
-        が格納される。
-    \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{66}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{68}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

@@ -1,18 +1,6 @@
-\frametitle{メモリ}
-    \framesubtitle{今まで何度か出てきたメモリの解説}
-    \begin{itemize}
-        \item メモリ\\
-        　メモリとはデータを記憶するパーツのことで、読み書きの
-        できるRAM(Random Access Memory)と読み取り専用のROM
-        (Read Only Memory)の2種類がある。一般的にメモリと言った際には
-        RAMを指すことが多く、このスライドで何度か出るメモリも
-        RAMを指している.(より正確に言うと仮想メモリを指している。)
-        \item 仮想メモリ\\
-        　仮想メモリとはＯＳが物理的なメモリを、ソフトウェアなど
-        のために専用の連続したメモリのように扱えるようにしたもの。
-    \end{itemize}
+\frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{61}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{63}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

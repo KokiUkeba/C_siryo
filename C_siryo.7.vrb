@@ -13,7 +13,7 @@
         \item 初期設定などなど.誰かに聞いたらＯＫ(書きつくすにはスペースが少なすぎた)
     \end{enumerate}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{4}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{6}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

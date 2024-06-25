@@ -17,7 +17,7 @@
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{19}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{21}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

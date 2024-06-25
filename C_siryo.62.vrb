@@ -1,25 +1,18 @@
-\frametitle{サンプルコード}
-    \framesubtitle{配列は列ベクトルとみなすことができるため、
-    今回はベクトルの合成を考える。}
-    \begin{lstlisting}[gobble=8, caption=pra\_array.c]
-        #include<stdio.h>
-
-        int main(void)
-        {
-            double a[3] = {3, 5, 3};
-            double b[3] = {1, 5, 7};
-
-            double c[3];
-            for (int i = 0; i < 3; i++) {
-                c[i] = a[i] + b[i];
-                printf("c[%d]=%f\n", i, c[i]);
-            }
-
-            return 0;
-        }
-    \end{lstlisting}
+\frametitle{実行例}
+    \begin{block}{int a[3]; //初期化なし}
+        a[0]=不定, a[1]=不定, a[2]=不定
+    \end{block}
+    \begin{block}{int b[3] = \{1\};}
+        b[0]=1, b[1]=0, b[2]=0 //b[1],b[2]の値は環境により異なる.私の環境では0となった。
+    \end{block}
+    \begin{block}{int c[] = \{1, 2, 3\}; //サイズは宣言した要素の数となる}
+        c[0]=1, c[1]=2, c[2]=3
+    \end{block}
+    \begin{block}{printf("\%d", c[3]); //配列外の要素を参照している。}
+        1307256064 //配列外の要素であるが、問題なく出力される。バグの要因となる.
+    \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{59}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{61}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

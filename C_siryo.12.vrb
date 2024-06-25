@@ -13,7 +13,7 @@
         Hello world
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{9}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{11}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

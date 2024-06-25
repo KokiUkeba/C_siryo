@@ -10,7 +10,7 @@
     条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
     変わらないときが多く,そのようなときはwhile文を使うのがよい.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{30}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{32}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

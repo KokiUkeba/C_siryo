@@ -15,7 +15,7 @@
     ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
     強制終了できる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{6}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{8}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

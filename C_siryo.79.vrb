@@ -1,0 +1,21 @@
+\frametitle{実行例}
+    \textbf{～ポインタと配列～}
+    \begin{block}{int a[3] = \{1, 2, 3\};}
+        pv = a //a[0]のアドレスを代入することと同じ
+    \end{block}
+    \begin{block}{*pv, *(pv+1), *(pv+2)を出力}
+        *pv=1       //a[0]の値\\
+        *(pv+2)=2   //a[1]の値\\
+        *(pv+3)=3   //a[2]の値
+    \end{block}
+    \textbf{～ポインタと関数(配列を関数に渡す)～}
+    \begin{block}{//プロトタイプ宣言\\
+        void func(int size, int *array\_name);}
+        func(3, a) //関数呼び出し
+    \end{block}
+    このようにすることで、自作関数内で配列の値を参照できるようになる。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}

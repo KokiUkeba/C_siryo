@@ -1,23 +1,18 @@
-\frametitle{アドレス}
-    \framesubtitle{}
+\frametitle{メモリ}
+    \framesubtitle{今まで何度か出てきたメモリの解説}
     \begin{itemize}
-        \item アドレス\\
-            　アドレスとはメモリ上の位置を表す値のことである。\\
-             　私たちがmain関数内でint型の変数xを宣言したとき、
-             CPUは仮想メモリ内のスタック領域に、変数xの値を格納するた
-             めの4[byte]分の領域を確保する。\\
-             　この変数xの値を参照するとき
-             私たちは単に変数名のxを呼ぶだけでよい。ではCPUはこの値を
-             どのようにして参照しているのか。\\
-             　CPUは変数の値を格納しているメモリ領域に名前
-             を付け、その名前に格納されている値を参照している。このとき
-             のメモリ領域の名前をアドレスと呼ぶ。\\
-             　領域の確保をしてアドレスを作るというような説明になった
-             が、実際はアドレスが先に決まっており、そこに領域を確保して
-             いる。アドレスは1バイト毎に割り振られている。
+        \item メモリ\\
+        　メモリとはデータを記憶するパーツのことで、読み書きの
+        できるRAM(Random Access Memory)と読み取り専用のROM
+        (Read Only Memory)の2種類がある。一般的にメモリと言った際には
+        RAMを指すことが多く、このスライドで何度か出るメモリも
+        RAMを指している.(より正確に言うと仮想メモリを指している。)
+        \item 仮想メモリ\\
+        　仮想メモリとはＯＳが物理的なメモリを、ソフトウェアなど
+        のために専用の連続したメモリのように扱えるようにしたもの。
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{62}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{64}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

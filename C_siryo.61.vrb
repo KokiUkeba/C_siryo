@@ -19,7 +19,7 @@
     **\space この方法で初期化したとき、環境によっては他の要素が不定と
     なる場合がある。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{58}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{60}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

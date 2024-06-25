@@ -4,11 +4,13 @@
 \setbeamertemplate{navigation symbols}{}
 \setbeamertemplate{footline}[frame number]
 
-\usepackage{amsmath}
-\usepackage{amssymb}
-\usepackage{amsfonts}
+\usepackage{bxdpx-beamer}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+%\usepackage{amsfonts}
 \usepackage{ascmac}
 \usepackage{mathtools}
+\usepackage{mathptmx}
 \usepackage{color}
 \usepackage{graphics}
 \usepackage{pxjahyper}
@@ -55,6 +57,9 @@
  showspaces=false,
  tabsize=4,
 }
+%\renewcommand\kanjifamilydefault{\gtdefault}
+\renewcommand\familydefault{\ttdefault}
+%\usefonttheme[onlymath]{serif}
 \renewcommand{\tablename}{表}
 \renewcommand{\figurename}{}
 \renewcommand{\lstlistingname}{}
@@ -64,13 +69,13 @@
 \date{\today}
 
 \begin{document}
-\begin{frame}[plain, label=1]
+\begin{frame}[plain]
     \frametitle{}
     \titlepage
 \end{frame}
 
 \section{はじめに}
-\begin{frame}[c, label=2]
+\begin{frame}[c]
     \frametitle{はじめに}
     　これからc言語を学ぶ皆さんの健闘を祈る。
     誤字脱字などがあれば知らせてくれると助かります。わからないところがあってもとりあえず流し先に進むこと。いつかわかるときが来る。
@@ -83,16 +88,16 @@
 \end{frame}
 
 \section{環境構築}
-\begin{frame}[label=4]
+\begin{frame}[t, fragile]
     \frametitle{環境構築}
     \framesubtitle{wslを用いた環境作りを行う}
     \tableofcontents[sections={2,3}]
     \begin{textblock*}{0.3\linewidth}(317.45pt, 263pt)
-        \hyperlink{5}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=5]
+\begin{frame}[t, fragile]
     \frametitle{wslのインストール}
     　ここではwsl(windows\space subsystem\space for\space linux)を用いた,
     ubuntuのインストールの例を示す.
@@ -108,14 +113,14 @@
         \item 初期設定などなど.誰かに聞いたらＯＫ(書きつくすにはスペースが少なすぎた)
     \end{enumerate}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{4}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{6}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ubuntuコマンド}
-\begin{frame}[t, fragile, label=6]
+\begin{frame}[t, fragile]
     \frametitle{コマンドなどなど}
     　ubuntuは(Linuxディストリビューションの一つで,)
     OS(Operating System)なので,
@@ -143,13 +148,13 @@
         \end{tabular}
     \end{table}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{5}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{7}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=7]
+\begin{frame}[t, fragile]
     \frametitle{C言語の環境構築}
     ubuntuで以下を打ち込む
         \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
@@ -167,14 +172,14 @@
     ファイルを実行して,なかなか終了しないときはCtrl+Cでコードを
     強制終了できる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{6}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{8}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{vimの使い方}
-\begin{frame}[t, fragile, label=8]
+\begin{frame}[t, fragile]
     \frametitle{テキストエディタの使い方}
     ubuntuにデフォルトでインストールされているvimを紹介する.
     \begin{table}[h]
@@ -204,27 +209,27 @@
     他にもいろいろあるので,興味があれば調べるのが良い.
         (\texttt{vimtutor}など)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{7}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{9}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{C言語とは}
-\begin{frame}[c, fragile, label=9]
+\begin{frame}[c, fragile]
     \frametitle{C言語とは}
     　1972年にデニス・リッチーによって開発された汎用プログラミング言語.
     C言語は他の多くのプログラミング言語の基礎となっており,その
     シンプルさと効率性が特徴である.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{8}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{10}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{基本構文}
-\begin{frame}[c, fragile, label=10]
+\begin{frame}[c, fragile]
     \frametitle{Hello, World!}
     \framesubtitle{とりあえずc言語を動かしてみる}
     \begin{lstlisting}[gobble=8, caption=hello.c, label=hello]
@@ -240,13 +245,13 @@
         Hello world
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{9}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{11}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=11]
+\begin{frame}[t, fragile]
     \frametitle{解説}
     \framesubtitle{今回記述した内容は,今後のコード作成でも
         必ず記述することになるものなので,
@@ -268,25 +273,25 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{10}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{12}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{変数と演算}
-\begin{frame}[label=12]
+\begin{frame}[t, fragile]
     \frametitle{変数と演算}
     \tableofcontents[sections={2,6}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{11}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{13}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{変数}
-\begin{frame}[t, fragile, label=13]
+\begin{frame}[t, fragile]]
     \frametitle{変数とデータ型}
     \begin{lstlisting}[gobble=8, caption=variable.c, label=variable]
         #include<stdio.h>
@@ -307,13 +312,13 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{12}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{14}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=14]
+\begin{frame}[t, fragile]
     \frametitle{解説}
     \begin{block}{出力}
     10\\
@@ -339,14 +344,14 @@
         \end{tabular}
     \end{table}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{13}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{15}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{演算}
-\begin{frame}[t,fragile, label=15]
+\begin{frame}[t,fragile]
     \frametitle{演算(その1)}
     加算は+,減算は-、乗算は*、除算は/である.int型同士の商は
     少数切り捨ての整数となる.また,剰余は\%で求める。
@@ -366,13 +371,13 @@
         1   
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{14}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{16}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, label=16]
+\begin{frame}[t]
     \frametitle{演算(その2)}
     累乗はmath.hを追加でインクルードし,powを使って求める.
     \begin{block}{pow(9,2)}
@@ -391,14 +396,14 @@
         double型の計算結果を得る
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{15}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{17}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{代入演算}
-\begin{frame}[t, label=17]
+\begin{frame}[t]
     \frametitle{代入演算}
     =を用いて代入を行う.C言語で(左辺)=(右辺)という式は,
     (左辺)に(右辺)の値を代入する,という処理になる.
@@ -417,38 +422,37 @@
         4\qquad //デクリメントと言う
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{16}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{18}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{更新処理}
-\begin{frame}[t, label=18]
+\begin{frame}[t]
     \frametitle{更新処理}
-    変数ｘと変数iの和差積商をｘとする更新処理の場合,次のように書く.\\
-    (block内の表記方法が他スライドと異なることに注意されたし)
-    \begin{exampleblock}{x = x + i}
+    変数ｘと変数iの和差積商をｘとする更新処理の場合,次のように書く.
+    \begin{block}{x = x + i}
         x += i 
-    \end{exampleblock}
-    \begin{exampleblock}{x = x - i}
+    \end{block}
+    \begin{block}{x = x - i}
         x -= i
-    \end{exampleblock}
-    \begin{exampleblock}{x = x * i}
+    \end{block}
+    \begin{block}{x = x * i}
         x *= i
-    \end{exampleblock}
-    \begin{exampleblock}{x = x / i}
+    \end{block}
+    \begin{block}{x = x / i}
         x /= i
-    \end{exampleblock}
+    \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{17}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{19}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{論理条件演算子}
-\begin{frame}[c, fragile, label=19]
+\begin{frame}[c, fragile]
     \frametitle{論理条件演算子(その1)}
     \begin{itemize}
         \item 等値演算子:(左辺)==(右辺)\\
@@ -463,13 +467,13 @@
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{18}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{20}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[c, fragile, label=20]
+\begin{frame}[c, fragile]
     \frametitle{論理条件演算子(その2)}
     \begin{itemize}
         \item \begin{verbatim}and演算子:(左辺)&&(右辺)\end{verbatim}
@@ -489,13 +493,13 @@
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{19}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{21}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 \subsection{関係演算子}
-\begin{frame}[t, fragile, label=21]
+\begin{frame}[t, fragile]
     \frametitle{関係演算子}
     $>,<,>=,<=$のように記述する.\\
     真の場合1,偽の場合0を返す.C言語では0以外の数値は,真偽値において
@@ -516,14 +520,14 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{20}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{22}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ビット演算子}
-\begin{frame}[t, fragile, label=22]
+\begin{frame}[t, fragile]
     \frametitle{ビット演算子(その1)}
     \begin{itemize}
         \item \begin{verbatim}ビット毎の論理積:(式1)&(式2)\end{verbatim}
@@ -531,9 +535,9 @@
             \begin{block}{a $= 29 \& 17$}
                 a = 17\qquad $//29=11101_{(2)},17=10001_{(2)}$
             \end{block}
-        \item ビット毎の排他的論理和:(式1)＾(式2)\\
+        \item ビット毎の排他的論理和:(式1)\textasciicircum(式2)\\
             \qquad 各桁毎の排他的論理和を返す.
-            \begin{block}{a = 29 ＾ 17}
+            \begin{block}{a = 29 \textasciicircum 17}
                 a = 12\qquad $//29=11101_{(2)},17=10001_{(2)}$
             \end{block}
         \item ビット毎の論理和:(式1)｜(式2)\\
@@ -543,13 +547,13 @@
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{21}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{23}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=23]
+\begin{frame}[t, fragile]
     \frametitle{ビット演算子(その2)}
     \begin{itemize}
         \item ビット反転演算子:\~\space (式)\\
@@ -570,34 +574,34 @@
             \end{block}
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{22}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{24}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t,fragile, label=24]
+\begin{frame}[t,fragile]
     \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{23}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{25}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{実行制御}
-\begin{frame}[label=25]
+\begin{frame}[t, fragile]
     \frametitle{実行制御}
     \tableofcontents[sections={2,7}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{24}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{26}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{for文}
-\begin{frame}[t, fragile, label=26]
+\begin{frame}[t, fragile]
     \frametitle{for文(反復処理)}
     繰り返しの回数が決まっている反復処理にはfor文が使われる.
     \begin{lstlisting}[gobble=3, caption=Syntax\space of\space for\space loop, label=for_howto]
@@ -628,13 +632,13 @@
         \hline
     \end{tabular}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{25}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{27}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=27]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \vspace{-20pt}
     \begin{lstlisting}[gobble=4, caption=pra\_ for.c, label=pra-for]
@@ -642,37 +646,36 @@
 
     int main(void)
     {
-
         for (int i = 0; i < 10; i++) {
-            printf("Hello World\n"); 
+            printf("Hello World%d\n", i); 
         }
 
         return 0;
     }
     \end{lstlisting}
     \begin{block}{出力}
-    Hello\space World\\
+    Hello\space World0\\
     \dots\\
-    Hello\space World //10個表示されている
+    Hello\space World9 //10個表示されている
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{26}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{28}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=28]
+\begin{frame}[t, fragile]
     \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{27}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{29}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{while文}
-\begin{frame}[t,fragile, label=29]
+\begin{frame}[t,fragile]
     \frametitle{while文(条件付き反復)}
     繰り返しの条件が決まっている反復処理に使われる.
     \begin{lstlisting}[gobble=3, caption=Syntax\space of\space while\space loop , label=while_howto]
@@ -699,13 +702,13 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{28}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{30}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=30]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[gobble=4, caption=pra\_while.c, label=pra-while]
     #include<stdio.h>
@@ -727,14 +730,14 @@
     0.272977
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{29}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{31}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subtitle{do while文}
-\begin{frame}[c, fragile, label=31]
+\begin{frame}[c, fragile]
     \frametitle{do\space while文}
     始めに文内の処理を行い,その後while文と同じ挙動をする.\\
     必ず一回は文内の処理を行いたいときに使う.
@@ -747,23 +750,23 @@
     条件を決める.」と区別できるが,どちらを使ってももコードがほとんど
     変わらないときが多く,そのようなときはwhile文を使うのがよい.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{30}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{32}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=32]
+\begin{frame}[t, fragile]
     \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{31}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{33}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{if文}
-\begin{frame}[t, fragile, label=33]
+\begin{frame}[t, fragile]
     \frametitle{if文(条件分岐)}
     ある条件を満たしたときに,行いたい処理があるときに使う.
     \begin{lstlisting}[gobble=6, caption=Syntax\space of \space if, label=if_howto]
@@ -792,13 +795,13 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{32}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{34}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=34]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[gobble=8, caption=pra\_if.c, label=pra-if]
         #include<stdio.h>
@@ -820,16 +823,16 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{33}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{35}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[label=35]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{block}{出力}
-        e＾pi is larger.
+        e\textasciicircum pi is larger.
     \end{block}
     　上のコードは\texttt{x = y}の場合を考慮していないため,
     あまり良いコードではない.例ということで許してほしい。
@@ -837,18 +840,17 @@
     math.hをインクルードするときは\texttt{gcc hoge.c -lm}を用いる.
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{34}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{36}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{if else if文}
-\begin{frame}[t, fragile, label=36]
+\begin{frame}[t, fragile]
     \frametitle{if\space else\space if文}
     if文を連続して用いる際は次のように記述する.
     \begin{lstlisting}[gobble=3, caption=Syntax\space of\space if-else-if, label=if_howto]
-    // any if-else ladder starts with an if statement only
     if (condition) {
     
     } else if (codition) {
@@ -860,14 +862,14 @@
     }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{35}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{37}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{continue/break/goto}
-\begin{frame}[t, fragile, label=37]
+\begin{frame}[t, fragile]
     \frametitle{continue/break/goto}
     ループの処理を行うときに、知っておくとと便利
     \begin{table}
@@ -891,15 +893,16 @@
     goto文は便利なように見えるが,何重ものネストから
     一気に抜け出す場合にのみ用いるべきである.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{36}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{38}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{switch文}
-\begin{frame}[t, fragile, label=38]
+\begin{frame}[t, fragile]
     \frametitle{switch文}
+    \framesubtitle{使ったことがないためよくわからない}
     \begin{lstlisting}[gobble=6, caption=Syntax\space of\space switch\space statement, label=switch_howto]
         switch (expression) {
         case value1:
@@ -920,13 +923,13 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{37}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{39}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=39]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[gobble=8, caption=pra\_switch.c, label=pra-switch1]
         #include<stdio.h>
@@ -946,13 +949,13 @@
                     break;
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{38}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{40}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=40]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[firstnumber=16, gobble=8, caption=pra\_switch.c, label=pra-switch2]
                 case 2:
@@ -968,9 +971,9 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{39}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{41}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
@@ -984,34 +987,34 @@
     同様のコードをif\space else\space if文を用いて書くことができるため,
     あまり使われない.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{40}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{42}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=42]
+\begin{frame}[t, fragile]
     \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{41}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{43}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{関数}
-\begin{frame}[label=43]
+\begin{frame}[t, fragile]
     \frametitle{関数}
     \tableofcontents[sections={2, 8}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{42}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{44}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{関数の基本}
-\begin{frame}[t, fragile, label=44]
+\begin{frame}[t, fragile]
     \frametitle{関数の基本}
     　すでに出てきた関数として,main関数やprintf関数などがある.\\
     関数を使うとき,その返り値や引数を知る必要がある.
@@ -1056,14 +1059,14 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{43}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{45}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{関数の作成}
-\begin{frame}[t, fragile, label=45]
+\begin{frame}[t, fragile]
     \frametitle{関数の作成}
     \framesubtitle{プロトタイプ宣言}
     　自作の関数を作るには,まず関数を宣言する.
@@ -1090,13 +1093,13 @@
     　これらはプロトタイプ宣言と呼ばれ,関数を呼び出す前に
     記述しなければならない.(main文の上に書く)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{44}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{46}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=46]
+\begin{frame}[t, fragile]
 	\frametitle{関数の作成}
 	\framesubtitle{関数の定義}
 	\begin{lstlisting}[gobble=8, caption=Syntax\space of\space function
@@ -1112,13 +1115,13 @@
         見やすさが損なわれるため,プロトタイプ宣言→main関数→関数の定義
         の順でコードを書くことをお勧めする.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{45}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{47}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=47]
+\begin{frame}[t, fragile]
     \frametitle{関数の定義}
     \framesubtitle{補足}
     \vspace{-30pt}
@@ -1159,13 +1162,13 @@
     　右の書き方であれば,自作関数をいくつ定義してもmain関数が
     必ず一番初めに定義されるので,見やすくなる.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{46}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{48}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=48]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \framesubtitle{ベクトルのノルムを計算する関数を作成する.}
     \vspace{-10pt}
@@ -1189,13 +1192,13 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{47}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{49}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=49]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[gobble=8, firstnumber=18, caption=pra\_func.c]
         double Norm(int data,...) //function definition
@@ -1215,13 +1218,13 @@
 
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{48}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{50}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=50]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \begin{lstlisting}[gobble=8, firstnumber=32, caption=pra\_func.c]
             for (i = 0; i < data; i++) {
@@ -1241,23 +1244,23 @@
     　このような処理には配列を使うのが一般的である.例ということで
     許してほしい.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{49}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{51}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{変数のあれこれ}
-\begin{frame}[label=51]
+\begin{frame}[t, fragile]
     \frametitle{変数のあれこれ}
     \tableofcontents[sections={2,9}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{50}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{52}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
-\begin{frame}[c, fragile, label=52]
+\begin{frame}[c, fragile]
     \frametitle{ローカル変数とグローバル変数}
     変数は下のように大きく二つに大別できる.
     \begin{itemize}
@@ -1274,14 +1277,14 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{51}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{53}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ローカル変数}
-\begin{frame}[label=53]
+\begin{frame}[t, fragile]
     \frametitle{ローカル変数}
     　関数内で宣言された変数はローカル変数となる.
     \begin{table}
@@ -1312,14 +1315,14 @@
             はメモリの静的領域に配置される.
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{52}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{54}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{グローバル変数}
-\begin{frame}[label=54]
+\begin{frame}[t, fragile]
     \frametitle{グローバル変数}
     　関数外で宣言された変数はグローバル変数となる.\\
     main関数の前に宣言されることが多い.
@@ -1367,14 +1370,14 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{53}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{55}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{定数の宣言}
-\begin{frame}[c, fragile, label=55]
+\begin{frame}[c, fragile]
     \frametitle{定数の宣言}
     \framesubtitle{みかん}
     \begin{itemize}
@@ -1390,25 +1393,25 @@
             %todo
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{54}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{56}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{配列}
-\begin{frame}[label=56]
+\begin{frame}[t, fragile]
     \frametitle{配列}
     \tableofcontents[sections={2,10}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlink{55}{\beamerbutton{＜}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
     \space
-    \hyperlink{57}{\beamerbutton{＞}}
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{配列の宣言}
-\begin{frame}[t, fragile, label=57]
+\begin{frame}[t, fragile]
     \frametitle{配列の宣言}
     　C言語の配列とは同じ型の、複数の値を一つの名前で扱う
     ことができるデータ構造の一つである。より踏み込んだ説明を
@@ -1434,14 +1437,14 @@
     \end{table}
     \vspace{-3pt}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{56}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{58}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{配列の要素}
-\begin{frame}[t, fragile, label=58]
+\begin{frame}[t, fragile]
     \frametitle{配列の要素}
     　配列の個々の要素へはの次のようにしてアクセスできる。
         配列の要素は変数と同じように扱える。
@@ -1471,14 +1474,14 @@
     インデックスの値が0～(size-1)にあるかどうかには十分気を付けること。
     (配列外の値にアクセスできるが、エラーは出ない)
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{57}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{59}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{配列の初期化}
-\begin{frame}[t, fragile, label=59]
+\begin{frame}[t, fragile]
     \frametitle{配列の初期化}
     　配列の初期値は不定であるため、初期化を行う必要がある。
     大きさが10000程度の配列を宣言し、一度確認してみるとよいだろう。
@@ -1500,14 +1503,37 @@
     **\space この方法で初期化したとき、環境によっては他の要素が不定と
     なる場合がある。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{58}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{60}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+%todo
+\subsection{実行例}
+\begin{frame}[t, fragile]
+    \frametitle{実行例}
+    \begin{block}{int a[3]; //初期化なし}
+        a[0]=不定, a[1]=不定, a[2]=不定
+    \end{block}
+    \begin{block}{int b[3] = \{1\};}
+        b[0]=1, b[1]=0, b[2]=0 //b[1],b[2]の値は環境により異なる.私の環境では0となった。
+    \end{block}
+    \begin{block}{int c[] = \{1, 2, 3\}; //サイズは宣言した要素の数となる}
+        c[0]=1, c[1]=2, c[2]=3
+    \end{block}
+    \begin{block}{printf("\%d", c[3]); //配列外の要素を参照している。} 
+        1307256064 //配列外の要素であるが、問題なく出力される。バグの要因となる.
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{サンプルコード}
-\begin{frame}[t, fragile, label=60]
+\begin{frame}[t, fragile]
     \frametitle{サンプルコード}
     \framesubtitle{配列は列ベクトルとみなすことができるため、
     今回はベクトルの合成を考える。}
@@ -1529,13 +1555,13 @@
         }
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{59}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{61}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[c, fragile, label=61]
+\begin{frame}[c, fragile]
     \frametitle{サンプルコード}
     \begin{block}{出力}
         c[0]=4.000000\\
@@ -1553,24 +1579,24 @@
         \end{itemize}
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{60}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{62}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=62]
+\begin{frame}[t, fragile]
     \frametitle{演習問題}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{61}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{63}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{ポインタへ向けての準備}
 \subsection{メモリ}
-\begin{frame}[t, fragile, label=61]
+\begin{frame}[t, fragile]
     \frametitle{メモリ}
     \framesubtitle{今まで何度か出てきたメモリの解説}
     \begin{itemize}
@@ -1585,14 +1611,14 @@
         のために専用の連続したメモリのように扱えるようにしたもの。
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{61}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{63}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{アドレス}
-\begin{frame}[t, fragile, label=63]
+\begin{frame}[t, fragile]
     \frametitle{アドレス}
     \framesubtitle{}
     \begin{itemize}
@@ -1608,17 +1634,18 @@
              を付け、その名前に格納されている値を参照している。このとき
              のメモリ領域の名前をアドレスと呼ぶ。\\
              　領域の確保をしてアドレスを作るというような説明になった
-             が、実際はアドレスが先に決まっており、そこに領域を確保して
-             いる。アドレスは1バイト毎に割り振られている。
+             が、実際はアドレスが先に決まっており、そこに必要に応じて領域
+             を確保している。\\
+             アドレスは1バイト毎に割り振られている。
     \end{itemize}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{62}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{64}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
-\begin{frame}[t, fragile, label=64]
+\begin{frame}[t, fragile]
     \frametitle{図にしてみた}
     \begin{columns}[t, totalwidth=0.98\linewidth]
     \begin{column}{.55\linewidth}
@@ -1664,25 +1691,26 @@
     \end{column}
     \end{columns}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{63}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{65}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \section{ポインタ}
-\begin{frame}[t, label=65]
+\begin{frame}[t]
     \frametitle{ポインタ}
-    \tableofcontents[sections={2, 11}]
+    \framesubtitle{Ｃ言語学習の山場(文字の説明ばかりとなってしまうため、わかりにくいと感じたら、図解や実行例を見るとよいだろう。)}
+    \tableofcontents[sections={2, 12}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{64}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{66}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタの基本}
-\begin{frame}[t, fragile, label=66]
+\begin{frame}[t, fragile]
     \frametitle{ポインタの基本}
     \begin{itemize}
         \item ポインタ\\
@@ -1699,14 +1727,14 @@
         int i, *pi;
     \end{lstlisting}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{65}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{67}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタの初期化}
-\begin{frame}[t, fragile, label=67]
+\begin{frame}[t, fragile]
     \frametitle{ポインタの初期化}
     　ポインタとして宣言した変数にはアドレスを代入する。変数のアドレス
     は\verb|&|(アドレス演算子)を変数に作用させることで得る。
@@ -1724,14 +1752,14 @@
         が格納される。
     \end{itembox}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{66}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{68}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタによる間接アクセス}
-\begin{frame}[t, fragile, label=68]
+\begin{frame}[t, fragile]
     \frametitle{ポインタによる間接アクセス}
     　間接演算子*をポインタに作用させた式は、ポインタに格納された
     アドレスの指す値となる。(同じ記号を使うがポインタ宣言子とは名前が
@@ -1751,18 +1779,18 @@
         Var=5, *Ptr=5
     \end{block}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{67}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{69}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{図解}
-\begin{frame}[c, fragile, label=69]
+\begin{frame}[c, fragile]
     \frametitle{図解}
     \framesubtitle{左側にコード、右側にその時のメモリ領域の図を示す。}
     \begin{columns}[c, totalwidth=0.98\linewidth]
-    \begin{column}{.45\linewidth}
+    \begin{column}{.40\linewidth}
     \begin{lstlisting}[gobble=8]
         int Var = 10;
         int *Ptr;
@@ -1772,21 +1800,16 @@
     　(右図でわかるように\texttt{*PtrとVarは等価であるため、*Ptrに対
     して値を代入することはVarに値を代入することと等しい。)}
     \end{column}
-    \begin{column}{.50\linewidth}
+    \begin{column}{.55\linewidth}
     \begin{figure}
     \centering
-    %\vspace{-20pt}
         \begin{tikzpicture}
-              % Draw the variable box
-              \node[draw, rectangle, minimum width=50pt, minimum height=25pt] (ptr) at (30, 40) {\texttt{0xbadc0ffeebad==}\verb|&|\texttt{Var}};
+              \node[draw, rectangle, minimum width=50pt, minimum height=25pt] (ptr) at (30, 40) {\texttt{0xbadc0ffeebad==}(\verb|&|\texttt{Var})};
 
-              % Draw the pointer box
               \node[draw, rectangle, minimum width=50pt, minimum height=25pt, above=50pt of ptr] (var) {\texttt{10}};
 
-              % Draw arrow from pointer to variable
-              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr(==Var)}}++(0, 75pt)-- (var.east);
+              \draw[->] (ptr.east) -- ++(10pt,0) -- node[right=-2pt]{\texttt{*Ptr==Var}}++(0, 75pt)-- (var.east);
 
-              % Labels
               \node[above=3pt of var] {\texttt{Var}(変数)};
               \node[above=3pt of ptr] {\texttt{Ptr}(ポインタ)};
               \node[below=3pt of var] {\texttt{0xbadc0ffeebad}};
@@ -1797,26 +1820,26 @@
     \end{column}
     \end{columns}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{68}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{70}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタのポインタ}
-\begin{frame}[t, fragile, label=70]
+\begin{frame}[t, fragile]
     \frametitle{ポインタのポインタ}
     \framesubtitle{みかん}
     %todo
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{69}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{71}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタと配列}
-\begin{frame}[t, fragile, label=71]
+\begin{frame}[t, fragile]
     \frametitle{ポインタと配列}
     　配列名は配列の最初の要素を表すアドレスとなっている。
     つまり,\texttt{int a[10];}により配列を宣言した時、\texttt{a}と
@@ -1827,7 +1850,7 @@
         int v[1000];
         int *ptr;
 
-        ptr = v; // ptr = &v[0];
+        ptr = v; // == ptr = &v[0];
 
         for (int i = 0; i < 1000; i++) {
             printf("--------------------\n");
@@ -1844,14 +1867,14 @@
         \end{itembox}
     \end{textblock*}
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{70}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{72}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 
 \subsection{ポインタと関数}
-\begin{frame}[c, fragile, label=72]
+\begin{frame}[c, fragile]
     \frametitle{ポインタと関数}
     　ポインタを引数に取る関数を定義することができる。これにより、
     関数内で配列の値を参照できるようになる。(Ｃ言語では配列をそのまま引数
@@ -1859,12 +1882,139 @@
     　また、C言語の関数は返り値を1つしか持てないが、ポインタを使えば複数
     の値を返せる。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{71}{\beamerbutton{＜}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
         \space
-        \hyperlink{73}{\beamerbutton{＞}}
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+%todo
+\subsection{実行例}
+\begin{frame}[c, fragile]
+    \frametitle{実行例}
+    \begin{block}{int v, *pv; //int型変数、int型ポインタの宣言}
+        v = 3; //変数の初期化\\
+        pv = \verb|&|v; //ポインタの初期化(ポインタにはアドレスを代入する)
+    \end{block}
+    \begin{block}{%\begin{tabular}{l}
+            printf("v=\%d, \&v=\%p\textbackslash n", v, \&v);\\
+            printf("pv=\%p, \&pv=\%p\textbackslash n", pv, \&pv);
+        %\end{tabular}
+        }
+        v=3, \verb|&|v=0xcafecafecafe\\
+        pv=0xcafecafecafe, \verb|&|pv=0xcafebeefcafe
+    \end{block}
+    変数名v,アドレス0xcafecafecafeには３が格納されている。\\
+    変数名pv,アドレス0xcafebeefcafeには0xcafecafecafeが格納されている。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{}
+\begin{frame}[t, fragile]
+    \frametitle{実行例}
+    \textbf{～ポインタによる間接アクセス～}\\
+    *pvは,pvに格納されている0xcafecafecafeの指すメモリ領域
+    に格納されている3にアクセスする.
+    \begin{block}{printf("*pv=\%d", *pv); //ポインタによる間接アクセス}
+        *pv=3 //vの値
+    \end{block}
+    \begin{block}{v = 9}
+        v=9, *pv=9
+    \end{block}
+    \begin{block}{*pv = 2}
+        v=2, *pv=2
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{}
+\begin{frame}[t, fragile]
+    \frametitle{実行例}
+    \textbf{～ポインタと配列～}
+    \begin{block}{int a[3] = \{1, 2, 3\};}
+        pv = a //a[0]のアドレスを代入することと同じ
+    \end{block}
+    \begin{block}{*pv, *(pv+1), *(pv+2)を出力}
+        *pv=1       //a[0]の値\\
+        *(pv+2)=2   //a[1]の値\\
+        *(pv+3)=3   //a[2]の値
+    \end{block}
+    \textbf{～ポインタと関数(配列を関数に渡す)～}
+    \begin{block}{//プロトタイプ宣言\\
+        void func(int size, int *array\_name);}
+        func(3, a) //関数呼び出し
+    \end{block}
+    このようにすることで、自作関数内で配列の値を参照できるようになる。
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{サンプルコード}
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード}
+    \framesubtitle{2数の値を入れ替えるコード}
+    \begin{lstlisting}[gobble=8, caption=pra\_pointer1.c]
+        #include<stdio.h>
+
+        void exchange(int *, int *);
+
+        int main(void)
+        {
+            int x = 3;
+            int y = 8;
+            printf("(x,y)=(%d,%d)\n", x, y);
+
+            exchange(&x, &y);
+            
+            printf("(x,y)=(%d,%d)\n", x, y);
+            return 0;
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{}
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード}
+    \begin{lstlisting}[gobble=8, caption=pra\_pointer.c]
+        void exchange(int *x, int *y)
+        {
+            int ver;
+
+            ver = *x;
+            *x = *y;
+            *y = ver;
+        }
+    \end{lstlisting}
+    \begin{block}{出力}
+        (x,y)=(3,8)\\
+        (x,y)=(8,3)
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
 \end{frame}
 \end{document}
+
+
+
     \begin{lstlisting}[gobble=8, caption=example]
         double Norm(int, double *);
         
@@ -1873,28 +2023,10 @@
             double Vector[100];
             double *pvec, norm;
 
-            for (int i = 0; i < 100; i++) {
+            for (int i = 0; i < 100; i++a) {
                 Vector[i] = i;
             }
 
             printf("norm=%e\n", Norm(100, Vector);
         }
     \end{lstlisting}
-
-\subsection{}
-\begin{frame}[t, fragile, label=73]
-    \frametitle{サンプルコード}
-    \begin{lstlistng}[gobble=8, caption=pra\_pointer\_1.c]
-        #include<stdio.h>
-
-        int main(void)
-        {
-            
-        }
-    \end{lstlisting}
-    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlink{72}{\beamerbutton{＜}}
-        \space
-        \hyperlink{74}{\beamerbutton{＞}}
-    \end{textblock*}
-\end{frame}
