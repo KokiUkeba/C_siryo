@@ -1,5 +1,5 @@
 # C_programming text
-## pdfファイルはここ
+### pdfファイル
 https://github.com/KokiUkeba/C_siryo/blob/master/C_siryo.pdf
-## texファイルはここ
+### texファイル
 https://github.com/KokiUkeba/C_siryo/blob/master/C_siryo.tex
