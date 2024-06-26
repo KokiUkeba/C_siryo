@@ -5,9 +5,9 @@
 \setbeamertemplate{footline}[frame number]
 
 \usepackage{bxdpx-beamer}
-%\usepackage{amsmath}
-%\usepackage{amssymb}
-%\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
 \usepackage{ascmac}
 \usepackage{mathtools}
 \usepackage{mathptmx}
@@ -77,7 +77,7 @@
 \section{はじめに}
 \begin{frame}[c]
     \frametitle{はじめに}
-    　これからc言語を学ぶ皆さんの健闘を祈る。
+    　これから\textrm{C}言語を学ぶ皆さんの健闘を祈る。
     誤字脱字などがあれば知らせてくれると助かります。わからないところがあってもとりあえず流し先に進むこと。いつかわかるときが来る。
 \end{frame}
 
@@ -124,7 +124,7 @@
     \frametitle{コマンドなどなど}
     　ubuntuは(Linuxディストリビューションの一つで,)
     OS(Operating System)なので,
-    c言語を動かすためだけに用いるにはあまりにも十分すぎる環境である.
+   \textrm{C}言語を動かすためだけに用いるにはあまりにも十分すぎる環境である.
     関係のない機能が多すぎて逆に使いにくいと感じるかもしれない.
     しかし,今後PythonやGIT、ROSを扱う際にも使えるので、今のうちに
     慣れておくとよいだろう.閉じたいときは右上×ボタンから閉じられる。
@@ -155,7 +155,7 @@
 \end{frame}
 
 \begin{frame}[t, fragile]
-    \frametitle{C言語の環境構築}
+    \frametitle{\textrm{C}言語の環境構築}
     ubuntuで以下を打ち込む
         \begin{lstlisting}[gobble=9, caption=ubuntu, label=c_setup]
             sudo apt update
@@ -215,11 +215,11 @@
     \end{textblock*}
 \end{frame}
 
-\section{C言語とは}
+\section{\textrm{C}言語とは}
 \begin{frame}[c, fragile]
-    \frametitle{C言語とは}
+    \frametitle{\textrm{C}言語とは}
     　1972年にデニス・リッチーによって開発された汎用プログラミング言語.
-    C言語は他の多くのプログラミング言語の基礎となっており,その
+    \textrm{C}言語は他の多くのプログラミング言語の基礎となっており,その
     シンプルさと効率性が特徴である.
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
     \hyperlinkslideprev{\beamerbutton{＜}}
@@ -231,7 +231,7 @@
 \section{基本構文}
 \begin{frame}[c, fragile]
     \frametitle{Hello, World!}
-    \framesubtitle{とりあえずc言語を動かしてみる}
+    \framesubtitle{とりあえず\textrm{C}言語を動かしてみる}
     \begin{lstlisting}[gobble=8, caption=hello.c, label=hello]
         #include<stdio.h>
 
@@ -405,7 +405,7 @@
 \subsection{代入演算}
 \begin{frame}[t]
     \frametitle{代入演算}
-    =を用いて代入を行う.C言語で(左辺)=(右辺)という式は,
+    =を用いて代入を行う.\textrm{C}言語で(左辺)=(右辺)という式は,
     (左辺)に(右辺)の値を代入する,という処理になる.
     \begin{block}{x=3}
         3
@@ -502,7 +502,7 @@
 \begin{frame}[t, fragile]
     \frametitle{関係演算子}
     $>,<,>=,<=$のように記述する.\\
-    真の場合1,偽の場合0を返す.C言語では0以外の数値は,真偽値において
+    真の場合1,偽の場合0を返す.\textrm{C}言語では0以外の数値は,真偽値において
     は真と解釈される.
     \begin{itembox}[l]{tips}
         \begin{itemize}
@@ -1413,7 +1413,7 @@
 \subsection{配列の宣言}
 \begin{frame}[t, fragile]
     \frametitle{配列の宣言}
-    　C言語の配列とは同じ型の、複数の値を一つの名前で扱う
+    　\textrm{C}言語の配列とは同じ型の、複数の値を一つの名前で扱う
     ことができるデータ構造の一つである。より踏み込んだ説明を
     するならば、メモリ上に同じ型の配列要素が連続して並んだ
     領域のことである。
@@ -1469,7 +1469,7 @@
         \end{tabular} 
     \end{table}
     **注意**\\
-    　C言語ではコード内で使われるインデックスの値が、インデックスの
+    　\textrm{C}言語ではコード内で使われるインデックスの値が、インデックスの
     とりうる値を超えているかの検査はコンパイル時も実行時も行われない。
     インデックスの値が0～(size-1)にあるかどうかには十分気を付けること。
     (配列外の値にアクセスできるが、エラーは出ない)
@@ -1700,7 +1700,7 @@
 \section{ポインタ}
 \begin{frame}[t]
     \frametitle{ポインタ}
-    \framesubtitle{Ｃ言語学習の山場(文字の説明ばかりとなってしまうため、わかりにくいと感じたら、図解や実行例を見るとよいだろう。)}
+    \framesubtitle{\textrm{Ｃ}言語学習の山場(文字の説明ばかりとなってしまうため、わかりにくいと感じたら、図解や実行例を見るとよいだろう。)}
     \tableofcontents[sections={2, 12}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
         \hyperlinkslideprev{\beamerbutton{＜}}
@@ -1877,9 +1877,9 @@
 \begin{frame}[c, fragile]
     \frametitle{ポインタと関数}
     　ポインタを引数に取る関数を定義することができる。これにより、
-    関数内で配列の値を参照できるようになる。(Ｃ言語では配列をそのまま引数
+    関数内で配列の値を参照できるようになる。(\textrm{Ｃ}言語では配列をそのまま引数
     とすることはできない)\\
-    　また、C言語の関数は返り値を1つしか持てないが、ポインタを使えば複数
+    　また、\textrm{C}言語の関数は返り値を1つしか持てないが、ポインタを使えば複数
     の値を返せる。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
         \hyperlinkslideprev{\beamerbutton{＜}}
@@ -1913,7 +1913,6 @@
     \end{textblock*}
 \end{frame}
 
-\subsection{}
 \begin{frame}[t, fragile]
     \frametitle{実行例}
     \textbf{～ポインタによる間接アクセス～}\\
@@ -1935,7 +1934,6 @@
     \end{textblock*}
 \end{frame}
 
-\subsection{}
 \begin{frame}[t, fragile]
     \frametitle{実行例}
     \textbf{～ポインタと配列～}
@@ -1963,7 +1961,7 @@
 \subsection{サンプルコード}
 \begin{frame}[t, fragile]
     \frametitle{サンプルコード}
-    \framesubtitle{2数の値を入れ替えるコード}
+    \framesubtitle{2つの変数に格納されている値を入れ替えるコード}
     \begin{lstlisting}[gobble=8, caption=pra\_pointer1.c]
         #include<stdio.h>
 
@@ -1988,10 +1986,9 @@
     \end{textblock*}
 \end{frame}
 
-\subsection{}
 \begin{frame}[t, fragile]
     \frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, caption=pra\_pointer.c]
+    \begin{lstlisting}[gobble=8, caption=pra\_pointer.c, firstnumber=16]
         void exchange(int *x, int *y)
         {
             int ver;
@@ -2005,6 +2002,164 @@
         (x,y)=(3,8)\\
         (x,y)=(8,3)
     \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\subsection{サンプルコード2}
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード2}
+    \framesubtitle{\textrm{n}次元列ベクトルの和・スカラー倍・内積・ノルムを求める}
+    \begin{lstlisting}[gobble= 8, caption=pra\_pointer.c]
+        #include<stdio.h>
+        #include<math.h>
+
+        void sum(int, double*, double*, double*);
+        void scalar_multiple(double, int, double*);
+        double inner_product(int, double*, double*);
+        double norm(int, double*);
+
+        int main(void)
+        {
+            double a[100];
+            double b[100];
+            
+            for (int i = 0; i < 100; i++) {
+                a[i] = i;
+                b[i] = i;
+            }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード2}
+    \framesubtitle{\textrm{n}次元列ベクトルの和・スカラー倍・内積・ノルムを求める}
+    \begin{lstlisting}[gobble= 8, caption=pra\_pointer.c, firstnumber=19]
+            double c[100];
+            sum(100, c, a, b);
+
+            for (int i = 0; i < 100; i++) {
+                printf("c[%d]=%f\n", i, c[i]);
+            }
+            
+            printf("-----------------\n");
+            scalar_multiple(2, 100, c);
+
+            for (int i = 0; i < 100; i++) {
+                printf("c[%d]=%f\n", i, c[i]);
+            }
+
+            printf("-----------------\n");
+            double ans;
+            ans = inner_product(100, a, b);
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード2}
+    \framesubtitle{\textrm{n}次元列ベクトルの和・スカラー倍・内積・ノルムを求める}
+    \begin{lstlisting}[gobble= 8, caption=pra\_pointer.c, firstnumber=36]
+            printf("ans=%f\n", ans);
+            
+            printf("-----------------\n");
+            ans = norm(100, a);
+            printf("ans=%f\n", ans);
+            
+            return 0;
+        }
+
+        void sum(int size, double *ans, double *array1, double *array2)
+        {
+            for (int i = 0; i < size; i++) {
+                *(ans++) = *(array1++) + *(array2++); 
+            }
+        }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード2}
+    \framesubtitle{\textrm{n}次元列ベクトルの和・スカラー倍・内積・ノルムを求める}
+    \begin{lstlisting}[gobble= 8, caption=pra\_pointer.c, firstnumber=52]
+        void scalar_multiple(double scalar, int size, double *array)
+        {
+            for (int i = 0; i < size; i++) {
+                *(array++)*=scalar;
+            }   
+        }
+
+        double inner_product(int size, double *array1, double *array2)
+        {
+            double answer = 0;
+
+            for (int i = 0; i < size; i++) {
+                answer += *(array1++) * *(array2++);   
+            }
+    \end{lstlisting}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\begin{frame}[t, fragile]
+    \frametitle{サンプルコード2}
+    \framesubtitle{\textrm{n}次元列ベクトルの和・スカラー倍・内積・ノルムを求める}
+    \begin{lstlisting}[gobble= 8, caption=pra\_pointer.c, firstnumber=67]
+            return answer;
+        }
+
+        double norm(int size, double *array1)
+        {
+            double answer = 0;
+
+            for (int i = 0; i < size; i++) {
+                answer += *array1 * *(array1++);
+            }
+            
+            return sqrt(answer);
+        }
+    \end{lstlisting}
+    \vspace{-10pt}
+    \begin{block}{出力(一部)}
+        ans=328350.000000 // inner\_productの計算結果
+    \end{block}
+    \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
+    \end{textblock*}
+\end{frame}
+
+\section{文字列}
+\begin{frame}
+    \frametitle{文字列}
+    \tableofcontents[sections={1,13}]
+\end{frame}
+\subsection{文字列の基本}
+\begin{frame}[t, fragile]
+    \frametitle{文字列の基本}
+    　char型配列を使えば文字列として扱える。文字コードはASCII
+    
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
         \hyperlinkslideprev{\beamerbutton{＜}}
         \space

@@ -1,20 +1,7 @@
-\frametitle{サンプルコード}
-    \begin{lstlisting}[gobble=8, caption=pra\_pointer.c]
-        void exchange(int *x, int *y)
-        {
-            int ver;
-
-            ver = *x;
-            *x = *y;
-            *y = ver;
-        }
-    \end{lstlisting}
-    \begin{block}{出力}
-        (x,y)=(3,8)\\
-        (x,y)=(8,3)
-    \end{block}
+\frametitle{変数のあれこれ}
+    \tableofcontents[sections={2,9}]
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-        \hyperlinkslideprev{\beamerbutton{＜}}
-        \space
-        \hyperlinkslidenext{\beamerbutton{＞}}
+    \hyperlinkslideprev{\beamerbutton{＜}}
+    \space
+    \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}
