@@ -288,7 +288,8 @@
 \headcommand {\slideentry {13}{0}{1}{88/88}{}{0}}
 \headcommand {\beamer@framepages {88}{88}}
 \headcommand {\beamer@subsectionpages {88}{88}}
-\headcommand {\slideentry {13}{1}{1}{89/89}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{13}{1}{89}{文字列の基本}}
+\headcommand {\slideentry {13}{1}{1}{89/89}{文字列の基本}{0}}
 \headcommand {\beamer@framepages {89}{89}}
 \headcommand {\beamer@partpages {1}{89}}
 \headcommand {\beamer@subsectionpages {89}{89}}

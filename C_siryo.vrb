@@ -1,7 +1,7 @@
-\frametitle{変数のあれこれ}
-    \tableofcontents[sections={2,9}]
+\frametitle{文字列の基本}
+    　char型配列を使えば文字列として扱える。文字コードはASCIIコードが使われている。
     \begin{textblock*}{0.3\linewidth}(300pt, 263pt)
-    \hyperlinkslideprev{\beamerbutton{＜}}
-    \space
-    \hyperlinkslidenext{\beamerbutton{＞}}
+        \hyperlinkslideprev{\beamerbutton{＜}}
+        \space
+        \hyperlinkslidenext{\beamerbutton{＞}}
     \end{textblock*}

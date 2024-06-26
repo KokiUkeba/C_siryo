@@ -48,3 +48,4 @@
 \beamer@subsectionintoc {12}{9}{サンプルコード}{81}{0}{12}
 \beamer@subsectionintoc {12}{10}{サンプルコード2}{83}{0}{12}
 \beamer@sectionintoc {13}{文字列}{88}{0}{13}
+\beamer@subsectionintoc {13}{1}{文字列の基本}{89}{0}{13}
