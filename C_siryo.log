@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  26 JUN 2024 16:18
+This is e-upTeX, Version 3.141592653-p4.1.1-u1.30-230214-2.6 (utf8.uptex) (TeX Live 2024) (preloaded format=uplatex 2024.5.19)  1 JUL 2024 19:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1832,10 +1832,10 @@ Package rerunfilecheck Info: File `C_siryo.out' has not changed.
 Here is how much of TeX's memory you used:
  29881 strings out of 476156
  583072 string characters out of 5792954
- 2030596 words of memory out of 5000000
+ 2031596 words of memory out of 5000000
  51463 multiletter control sequences out of 15000+600000
  620804 words of font info for 141 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  101i,14n,107p,393b,1542s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on C_siryo.dvi (89 pages, 750412 bytes).
+Output written on C_siryo.dvi (89 pages, 750448 bytes).

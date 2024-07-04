@@ -1,0 +1,11 @@
+# Fdb version 3
+["dvipdf"] 0 "aframe.dvi" "aframe.pdf" "aframe" 0
+  "aframe.dvi" 0 -1 0 "latex"
+  (generated)
+  "aframe.pdf"
+["latex"] 1719829977 "aframe.tex" "aframe.dvi" "aframe" 1719829977
+  "aframe.aux" 1719829977 32 3985256e7290058c681f74d7a3565a19 ""
+  "aframe.tex" 1719202135 1431 bf99d8f4d718c94898f667885e8a0531 ""
+  (generated)
+  "aframe.dvi"
+  "aframe.log"
